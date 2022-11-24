@@ -1,3 +1,5 @@
+package exceptionJava;
+
 public class MultiplosCatch {
     public static void main(String[] args) {
 

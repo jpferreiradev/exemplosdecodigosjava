@@ -1,4 +1,6 @@
-public class MultiplosCatchJava7 {
+package exceptionJava;
+
+public class ExceptionGenerica {
     public static void main(String[] args) {
 
         int [] numeros = {4,8,16,32,64,128};
@@ -8,9 +10,11 @@ public class MultiplosCatchJava7 {
             try {
                 System.out.println(numeros[i]+ "/" + denominadores[i] + " = " + (numeros[i]/denominadores[i]));
             }
-            catch (ArrayIndexOutOfBoundsException | ArithmeticException e){
-                System.out.println("Aconteceu um erro");
+            catch (Exception e){
+                System.out.println(e.getMessage());
+                e.printStackTrace();
             }
+
         }
     }
 }

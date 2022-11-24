@@ -1,3 +1,5 @@
+package exceptionJava;
+
 public class UsandoMinhaException {
     public static void main(String args[]) { // Primeiro exemplo de como lançar uma exceção customizada
 

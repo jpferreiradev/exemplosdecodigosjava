@@ -1,3 +1,5 @@
+package exceptionJava;
+
 import java.util.Scanner;
 
 public class UsandoThrows {

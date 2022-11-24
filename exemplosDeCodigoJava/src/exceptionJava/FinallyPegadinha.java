@@ -1,4 +1,6 @@
-public class MultiplosCatchGenerico {
+package exceptionJava;
+
+public class FinallyPegadinha {
     public static void main(String[] args) {
 
         int [] numeros = {4,8,16,32,64,128};
@@ -10,13 +12,16 @@ public class MultiplosCatchGenerico {
             }
             catch (ArithmeticException e){
                 System.out.println("Erro ao dividir por zero");
-
+                System.exit(0);
             }
-            catch (Throwable e){ // Não usar essa classe, e sim usar a classe Exception quando for uma uma exceção generica
-                System.out.println("Ocorreu um erro");
-
+            catch (ArrayIndexOutOfBoundsException e) {
+                System.out.println("Posição do array inválida");
+                System.exit(0);
             }
-
+            finally {
+                System.out.println("Essa linha é impressa sempre após o try ou catch");
+                System.out.println();
+            }
         }
     }
 }

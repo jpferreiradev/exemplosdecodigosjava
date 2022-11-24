@@ -1,4 +1,4 @@
-// Exemplo de criação da sua propria exceção
+package exceptionJava;// Exemplo de criação da sua propria exceção
 
 public class DivisaoNaoExata  extends Exception{
 
