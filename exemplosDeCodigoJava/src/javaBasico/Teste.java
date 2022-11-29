@@ -6,6 +6,7 @@ public class Teste {
         int N = Integer.parseInt(args[0]);
         int v = 1;
 
+
         while (v<=N/2) {
             v = v * 2;
         }
