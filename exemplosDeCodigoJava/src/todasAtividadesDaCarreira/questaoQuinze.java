@@ -15,6 +15,24 @@ public class questaoQuinze {
 
         System.out.println("O valor do seu salário bruto é R$" + valorTotalSalarioMesBruto + " reais");
 
+        double conversaoValorDescontoIR = (valorTotalSalarioMesBruto * 11) / 100;
+        double conversaoValorDescontoINSS = (valorTotalSalarioMesBruto * 8) / 100;
+        double conversaoValorDescontoSindicato = (valorTotalSalarioMesBruto * 5) / 100;
+
+        double somaTotalDeDescontos = conversaoValorDescontoINSS + conversaoValorDescontoIR + conversaoValorDescontoSindicato;
+        double valorSalarioLiquido = valorTotalSalarioMesBruto - somaTotalDeDescontos;
+
+        System.out.println("O total de desconto foi de " + somaTotalDeDescontos );
+
+        System.out.println("Seu salário líquido é " + valorSalarioLiquido);
+
+
+        ///System.out.println(conversaoValorDescontoIR);
+
+        //double conversaoDescontoImpostos;
+
+
+
 
 
 
