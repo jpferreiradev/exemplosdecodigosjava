@@ -28,7 +28,7 @@ public class LeituraDadosTeclado {
         int minhaIdade = scan.nextInt();
         double minhaAltura = scan.nextDouble();
         byte quantidadeFilhos = scan.nextByte();
-        boolean quantidadeBixosEstimacao = scan.nextBoolean();
+        byte quantidadeBixosEstimacao = scan.nextByte();
 
         System.out.println("Você digitou os seguintes valores:");
         System.out.println("Seu nome: " + meuNome);

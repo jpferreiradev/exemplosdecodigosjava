@@ -9,6 +9,7 @@ public class questaoSeis {
         System.out.println("Digite o valor do raio: ");
         double valorRaio = scan.nextDouble();
 
+        //double p12 = Math.PI * Math.pow(valorRaio,2);
         double pi = 3.14;
         double valorDoRaio = valorRaio * valorRaio;
 

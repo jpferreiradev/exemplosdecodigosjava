@@ -19,7 +19,7 @@ public class questaoDezesseis {
         double valorLitroPorMetro = 3;
         double conversaoMetrosPorLitros = calculoMetroQuadrado / valorLitroPorMetro;
 
-        //System.out.println(conversaoMetrosPorLitros);
+
 
         double quantidadeDeLatasVendidasPorLitro = 18;
         double valorEmRealQuantidadeDeLitros = 80;
@@ -28,15 +28,9 @@ public class questaoDezesseis {
 
         double conversaoQuantidadeDeLatasEmReal = conversaoQuantidadeDeLatas * valorEmRealQuantidadeDeLitros;
 
-    System.out.println("A quantidade de latas foram: " + df.format(conversaoQuantidadeDeLatas));
+        System.out.println("A quantidade de latas foram: " + df.format(conversaoQuantidadeDeLatas));
         System.out.println("O preço total foi de R$" + df.format(conversaoQuantidadeDeLatasEmReal) + " reais");
-
-
-
-
-
-
-
-
     }
 }
+
+//System.out.println(conversaoMetrosPorLitros);

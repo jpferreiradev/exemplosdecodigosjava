@@ -5,8 +5,7 @@ public class CurtoCircuito {
 
         boolean verdadeiro = true;
         boolean falso = false;
-        boolean resultado1 = falso &
-                verdadeiro;
+        boolean resultado1 = falso & verdadeiro;
         boolean resultado2 = falso && // curto circuito
                 verdadeiro ;
 

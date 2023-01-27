@@ -8,7 +8,7 @@ public class questaoDois{
 
         Scanner scan = new Scanner(System.in);
 
-        System.out.println("Digite o número:");
+        System.out.println("Digite um número inteiro:");
         int numeroEscolhido = scan.nextInt();
         System.out.println("O número escolhido foi: " + numeroEscolhido);
 
