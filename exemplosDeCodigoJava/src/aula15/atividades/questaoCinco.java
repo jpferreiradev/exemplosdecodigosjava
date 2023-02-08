@@ -16,6 +16,7 @@ public class questaoCinco {
 
         System.out.println("A média foi:" + mediaAritmetrica);
 
+        /* -> Como eu fiz
         if(mediaAritmetrica >= 7){
             System.out.println("Aprovado");
         } else if (mediaAritmetrica < 7) {
@@ -23,6 +24,17 @@ public class questaoCinco {
         } else if (mediaAritmetrica == 10) {
             System.out.println("Aprovado com distinção");
         }
+        */
+
+        // Correção da questão
+        if(mediaAritmetrica == 10){
+            System.out.println("Aprovado com distinção");
+        } else if(mediaAritmetrica >= 7){
+            System.out.println("Aprovado");
+        } else if(mediaAritmetrica < 7) {
+            System.out.println("Reprovado");
+        }
+
 
     }
 }

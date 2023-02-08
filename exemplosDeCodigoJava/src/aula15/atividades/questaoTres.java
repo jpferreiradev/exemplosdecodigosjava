@@ -9,9 +9,10 @@ public class questaoTres {
         System.out.println("Digite uma letra entre f ou m");
         String sexo = scan.nextLine();
 
-        if(sexo.equals("m")){
+
+        if(sexo.equalsIgnoreCase("m")){
             System.out.println("Sexo masculino");
-        } else if (sexo.equals("f")) {
+        } else if (sexo.equalsIgnoreCase("f")) {
             System.out.println("Sexo feminino");
         } else {
             System.out.println("Sexo inválido");

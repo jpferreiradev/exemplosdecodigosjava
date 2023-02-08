@@ -14,7 +14,7 @@ public class questaoSeis {
         System.out.println("Digite o terceiro número");
         int terceiroNumero = scan.nextInt();
 
-        System.out.println("Os números digitados foram: " + primeiroNumero + segundoNumero + terceiroNumero);
+        System.out.println("Os números digitados foram: " + primeiroNumero + "," + segundoNumero + "," + terceiroNumero);
 
         if(primeiroNumero > segundoNumero && primeiroNumero > terceiroNumero){
             System.out.println("O maior número é " + primeiroNumero );

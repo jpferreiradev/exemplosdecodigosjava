@@ -12,23 +12,22 @@ public class questaoQuatro {
         String letra = scan.nextLine();
 
 
+
+
         switch(letra) {
-            case "a":
-                System.out.println("Vogal");
-                break;
-            case "e":
-                System.out.println("Vogal");
-                break;
-            case "i":
-                System.out.println("Vogal");
-                break;
-            case "o":
-                System.out.println("Vogal");
-                break;
-            case "u":
-                System.out.println("Vogal");
-                break;
-            default:System.out.println("É uma consoante");
+                    case "a":
+                    case "e":
+                    case "i":
+                    case "o":
+                    case "u":
+                    case "A":
+                    case "E":
+                    case "I":
+                    case "O":
+                    case "U":
+                        System.out.println("É uma vogal");
+                        break;
+                    default:System.out.println("É uma consoante");
         }
         }
 
