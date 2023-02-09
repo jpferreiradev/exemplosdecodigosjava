@@ -6,19 +6,20 @@ public class questaoNove {
     public static void main(String[] args) {
 
         Scanner scan = new Scanner(System.in);
-        int vetor[] = new int[3];
+        //int vetor[] = new int[3];
 
         System.out.println("Digite três números:");
 
         System.out.println("Primeiro número:");
         int numeroUm = scan.nextInt();
+        //int numeroUm[0] = scan.nextInt();
         System.out.println("Segundo número: ");
         int numeroDois = scan.nextInt();
         System.out.println("Terceiro número: ");
         int numeroTres = scan.nextInt();
 
         for(int i = 4;i > 0;i--){
-            vetor[i] = i;
+            //vetor[i] = i;
             System.out.println(i);
         }
 
