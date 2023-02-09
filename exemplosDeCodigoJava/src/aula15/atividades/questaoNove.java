@@ -6,6 +6,7 @@ public class questaoNove {
     public static void main(String[] args) {
 
         Scanner scan = new Scanner(System.in);
+        int vetor[] = new int[3];
 
         System.out.println("Digite três números:");
 
@@ -16,8 +17,18 @@ public class questaoNove {
         System.out.println("Terceiro número: ");
         int numeroTres = scan.nextInt();
 
-        if(numeroUm > numeroDois || numeroUm > numeroTres){
-
+        for(int i = 4;i > 0;i--){
+            vetor[i] = i;
+            System.out.println(i);
         }
+
     }
 }
+
+        /*
+        for(int i = 50;i < 100;i++){
+        System.out.println(i);
+        }
+
+        */
+
