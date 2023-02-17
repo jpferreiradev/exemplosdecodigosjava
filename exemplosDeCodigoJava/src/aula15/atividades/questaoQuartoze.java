@@ -1,2 +1,4 @@
-package aula15.atividades;public class questaoQuartoze {
+package aula15.atividades;
+
+public class questaoQuartoze {
 }
