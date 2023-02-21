@@ -7,7 +7,7 @@ public class questaoOnze {
 
         Scanner scan = new Scanner(System.in);
         DecimalFormat df = new DecimalFormat();
-        df.applyPattern("R$ #,##0.00");
+        df.format("R$ #,##0.00");
 
         System.out.println("Informe o seu salário:");
         double salarioColaborador = scan.nextDouble();
