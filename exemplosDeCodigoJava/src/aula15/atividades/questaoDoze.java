@@ -15,6 +15,26 @@ public class questaoDoze {
         int horasTrabalhadas = scan.nextInt();
         System.out.println("O valor da sua hora foi de " +  valorHora + " e o números de horas trabalhadas foi " + horasTrabalhadas);
 
+        double valorSalarioBruto = valorHora * horasTrabalhadas;
+        double valorDescontoIR = valorSalarioBruto * 0.05;
+        double valorDescontoINSS = valorSalarioBruto * 0.10;
+        double valorDescontoFGTS = valorSalarioBruto * 0.11;
+        double valorTotalDescontos =  valorDescontoIR + valorDescontoINSS;
+        double valorSalarioLiquido = valorSalarioBruto - valorTotalDescontos;
+
+
+
+        System.out.println("O valor do seu salário bruto:" + valorSalarioBruto);
+        System.out.println("---------------");
+
+        System.out.println("Valor desconto IR [5%]: " + valorDescontoIR);
+        System.out.println(" Valor desconto INSS [10%]: " + valorDescontoINSS);
+        System.out.println("Valo desconto FGTS[11%]:" + valorDescontoFGTS);
+        System.out.println("Valor total de descontos :" + valorTotalDescontos);
+        System.out.println("Valor salário liquido: " + valorSalarioLiquido);
+
+
+
 
     }
     }
