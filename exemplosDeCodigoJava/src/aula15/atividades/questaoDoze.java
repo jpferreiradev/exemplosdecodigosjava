@@ -7,8 +7,8 @@ public class questaoDoze {
     public static void main(String[] args) {
 
         Scanner scan = new Scanner(System.in);
-        //DecimalFormat df = new DecimalFormat();
-        //df.format("R$ #,##0.00");
+        DecimalFormat df = new DecimalFormat();
+        df.applyPattern("R$ #,##0.00");
 
         System.out.println("Informe o valor da sua hora trabalhada: ");
         double valorHora = scan.nextDouble();
