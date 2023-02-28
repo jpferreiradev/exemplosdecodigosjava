@@ -9,11 +9,11 @@ public class atividade01 {
 
         System.out.println("Digite uma nota entre 0 e 10:");
         double nota = scan.nextDouble();
-        System.out.println("A nota digitada foi de:" + nota);
 
-        while(nota > 0 && nota < 10){
 
+        while(nota >= 0 || nota <= 10){
+            System.out.println("A nota digitada foi de:" + nota);
         }
-
+        System.out.println("Erro!! Digite um valor válido...");
     }
 }
