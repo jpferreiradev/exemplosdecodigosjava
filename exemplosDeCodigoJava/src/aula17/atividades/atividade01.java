@@ -7,13 +7,38 @@ public class atividade01 {
 
         Scanner scan = new Scanner(System.in);
 
-        System.out.println("Digite uma nota entre 0 e 10:");
-        double nota = scan.nextDouble();
+        double nota = 0;
 
+        while (nota <= 0 || nota > 10){
+                System.out.println("Digite uma nota entre 0 e 10: ");
+                nota = scan.nextDouble();
+                System.out.println("Digite novamente, erro...");
+            }
 
-        while(nota >= 0 || nota <= 10){
-            System.out.println("A nota digitada foi de:" + nota);
-        }
-        System.out.println("Erro!! Digite um valor válido...");
+        System.out.println("Nota digitada:" + nota);
+
     }
+
 }
+
+
+
+
+/* double nota;
+        //double nota;
+        do {
+            System.out.println("Digite uma nota entre 0 e 10: ");
+            nota = scan.nextDouble();
+            System.out.println("Valor informado errado, digite novamente...");
+        } while (nota <= 0 || nota > 10 );
+
+ */
+/*
+        while(nota < 0 || nota > 10){
+        System.out.println("A nota " + nota + "não é válida");
+        System.out.println("Digite uma nota entre 0 e 10");
+        nota = scan.nextDouble();
+        }
+
+
+ */
