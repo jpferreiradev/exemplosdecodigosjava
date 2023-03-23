@@ -34,6 +34,7 @@ public class atividade02 {
 
 /*
 
+    // Aqui foi como Loiane usou:
     boolean infoValidas = false; // Aqui foi usado flag (Estudar sobre isso)
     String nomeUsuario;
     String senha;

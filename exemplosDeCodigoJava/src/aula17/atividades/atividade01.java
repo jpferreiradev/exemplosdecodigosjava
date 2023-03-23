@@ -29,7 +29,7 @@ public class atividade01 {
 
 // Maneira que a Loiane fez:
 /*
-    boolean  notaValida = false; // Aqui foi usado sobre flag ( Estudar sobre isso)
+    boolean  notaValida = false; // AQUI FOI USADO UMA FLAG ( Estudar sobre isso)
 
     do{
         System.out.println("Entre com uma nota");
@@ -42,8 +42,7 @@ public class atividade01 {
             System.out.println("Nota inválida, digite novamente.");
 
         }
-         } while(!
-         notaValida);
+         } while(!notaValida);
 
          }
 
