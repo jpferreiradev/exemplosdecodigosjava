@@ -15,19 +15,6 @@ public class atividade03 {
         boolean infoValida = true; // Exemplo de flag
 
 
-
-
-
-
-
-
-
-        //sexo = scan.next().charAt(0);
-
-
-        //estadoCivil = scan.next().charAt(0); // Você queria ter utilizado a variavel char
-
-
         infoValida = false;
         do {
             System.out.println("Digite o seu nome: ");
@@ -129,3 +116,9 @@ public class atividade03 {
 //System.out.println("Seu salário é: R$" + salario + " reais");
 //System.out.println("Seu sexo é:" + sexo );
 //System.out.println("Seu estado civil é :" + estadoCivil);
+
+
+//sexo = scan.next().charAt(0);
+
+
+//estadoCivil = scan.next().charAt(0); // Você queria ter utilizado a variavel char
