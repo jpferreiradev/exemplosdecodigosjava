@@ -1,11 +1,26 @@
 package aula17.atividades;
 
+
 public class atividade06 {
 
     public static void main(String[] args) {
 
-        int n;
+        //for (int i = 1; i <= 20; i++) {
+        //    System.out.println(i);
+       // }
+        for (int i = 1; i <= 20; i++) {
+            if (i == 20) {
+                System.out.print(i);
+            } else {
+                System.out.print(i + " ");
+            }
+        }
+    }
 
+}
+
+
+        /*
         for (int i = 1; i < 21; i++) {
            //for (int linha = 1; linha < 21; linha++)
             //System.out.println();
@@ -15,11 +30,9 @@ public class atividade06 {
 
             //System.out.println(i);
         }
+        */
 
 
-
-    }
-}
 
 
 /*
