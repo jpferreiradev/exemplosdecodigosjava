@@ -6,10 +6,11 @@ public class atividade09 {
     public static void main(String[] args) {
 
         int primeiroNumero;
-
+        int numeropar;
+        int numeroImpar;
 
         for (int i = 1; i <= 50; i++) {
-            //int numerosimpares =
+            numeropar = i / i % 0;
 
             System.out.println(i);
 

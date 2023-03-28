@@ -4,25 +4,33 @@ public class atividade06 {
 
     public static void main(String[] args) {
 
-        int n,m;
-
+        int n;
 
         for (int i = 1; i < 21; i++) {
-            for (int a = 1 ; a < 21; a++) {
-                n = i;
-                m = a;
-                //System.out.println(n + b);
-                System.out.println(n);
-                //System.out.println(" - ");
+           //for (int linha = 1; linha < 21; linha++)
+            //System.out.println();
+            if(i > 0 && i < 21){
+                System.out.println("A ordem é essa: " + i);
+            }
 
-                //System.out.println("teste " + b + " teste " + b + " teste");
-                }
-
-
+            //System.out.println(i);
         }
-    }
 
+
+
+    }
 }
+
+
+/*
+
+for (int linha = 0; linha < 6; linha++) {
+            for (int coluna = 0; coluna != linha; coluna++) {
+                System.out.print("-");
+            }
+            System.out.println();
+ */
+
 
 /*
 

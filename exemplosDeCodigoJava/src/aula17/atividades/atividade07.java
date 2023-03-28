@@ -1,11 +1,13 @@
 package aula17.atividades;
+
 import java.util.Scanner;
+
 public class atividade07 {
     public static void main(String[] args) {
 
         Scanner scan = new Scanner(System.in);
 
-        int primeiroNumero,segundoNumero,terceiroNumero,quartoNumero,quintoNumero;
+        int primeiroNumero, segundoNumero, terceiroNumero, quartoNumero, quintoNumero;
 
         System.out.println("Informe 5 números:");
         System.out.println("Primeiro número:");
@@ -20,12 +22,6 @@ public class atividade07 {
         quintoNumero = scan.nextInt();
 
         System.out.println("Os números foram: " + primeiroNumero + " - " + segundoNumero + " - " + terceiroNumero + " - " + quartoNumero + " - " + quintoNumero);
-
-        //if(primeiroNumero > segundoNumero && )
-
-
-
-
 
 
 
