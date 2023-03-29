@@ -7,6 +7,25 @@ public class atividade07 {
 
         Scanner scan = new Scanner(System.in);
 
+        int num;
+        int maior = Integer.MAX_VALUE;
+        //int maior2 = Integer.
+
+        for(int i = 0;i < 5;i++){
+            System.out.println("Entre com um número:");
+            num = scan.nextInt();
+
+            if(num > maior){
+                maior = num;
+                System.out.println("O número maior mudou: " + maior);
+            }
+            System.out.println("O maior número digitado foi: " + maior);
+        }
+
+
+
+
+        /*
         int primeiroNumero, segundoNumero, terceiroNumero, quartoNumero, quintoNumero;
 
         System.out.println("Informe 5 números:");
@@ -22,7 +41,7 @@ public class atividade07 {
         quintoNumero = scan.nextInt();
 
         System.out.println("Os números foram: " + primeiroNumero + " - " + segundoNumero + " - " + terceiroNumero + " - " + quartoNumero + " - " + quintoNumero);
-
+        */
 
 
 

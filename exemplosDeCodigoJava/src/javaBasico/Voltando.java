@@ -1,8 +1,12 @@
 package javaBasico;
 
+import java.util.Scanner;
+
 public class Voltando {
     public static void main(String [] args){
-        System.out.println("Bora porra");
+
+        Scanner scan = new Scanner(System.in);
+
 
 
         }

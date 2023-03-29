@@ -5,6 +5,7 @@ import java.text.DecimalFormat;
 public class atividade04 {
     public static void main(String[] args) {
 
+       /*
         double numeroHabitantesCidadeA = 80.000;
         double numeroHabitantesCidadeB = 200.000;
         double valorTaxaCrescimentoCidadeA = 3;
@@ -25,11 +26,23 @@ public class atividade04 {
         System.out.println(dc.format(conversaoTaxaCrescimentoCidadeB));
         System.out.println(conversaoDiferençaNumeroHabitantes);
         System.out.println(conversaoAnosHabitantes);
+        */
+        // Forma que a professora fez....
+        int popA = 80000;
+         int popB = 200000;
+         int cont = 0;
 
+         while (popA < popB){
 
+             popA += (popA/100) * 3;
+             popB += (popB/100) * 1.5;
+             cont++;
 
-        //System.out.println("O número de habitantes com a taxa de crescimento de: " + valorTaxaCrescimento + " é de " + conversaoTaxaCrescimento +
-        //              "habitantes");
-        //System.out.println("O número de habitantes é: " + valorQuantidadeHabitante + " e a taxa de crescimento é de:" + valorTaxaCrescimento + "%"  );
+         }
+
+        System.out.println("População A:" + popA);
+        System.out.println("População B: " + popB);
+        System.out.println("Quantidade de anos: " + cont);
+
     }
 }
