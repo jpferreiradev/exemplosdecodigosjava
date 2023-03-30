@@ -8,7 +8,7 @@ public class atividade07 {
         Scanner scan = new Scanner(System.in);
 
         int num;
-        int maior = Integer.MAX_VALUE;
+        int maior = Integer.MIN_VALUE;
         //int maior2 = Integer.
 
         for(int i = 0;i < 5;i++){
