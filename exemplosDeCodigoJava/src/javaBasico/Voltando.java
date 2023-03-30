@@ -7,7 +7,7 @@ public class Voltando {
 
         Scanner scan = new Scanner(System.in);
 
-
+        System.out.println("Informe:");
 
         }
     }
