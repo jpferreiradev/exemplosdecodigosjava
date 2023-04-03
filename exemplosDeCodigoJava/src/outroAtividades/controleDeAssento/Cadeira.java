@@ -1,20 +1,20 @@
 package outroAtividades.controleDeAssento;
 
-public class Cadeira {
+public class Cadeira extends Cliente {
 
     private int assento;
     private int fileira;
 
-    Cadeira(int assento, int fileira){
-         this.assento = assento;
-         this.fileira = fileira;
+    Cadeira(int assento, int fileira) {
+        this.assento = assento;
+        this.fileira = fileira;
     }
 
-    public int getAssento(){
+    public int getAssento() {
         return this.assento;
     }
 
-    public void setAssento(int assento){
+    public void setAssento(int assento) {
         this.assento = assento;
     }
 
@@ -22,7 +22,17 @@ public class Cadeira {
         return fileira;
     }
 
-    public void setFileira(int fileira){
+    public void setFileira(int fileira) {
         this.fileira = fileira;
     }
+
+    public void reservaAssento(){
+
+    }
+
+    public void cancelaAssento(){
+
+    }
+
+
 }
