@@ -9,7 +9,28 @@ public class BreakContinue3 {
 
         Scanner scan = new Scanner(System.in);
 
-        System.out.println("Digite um número:");
+        System.out.println("Digite um número: ");
+        int numero = scan.nextInt();
+
+        System.out.println("Digite um limite: ");
+        int maximo = scan.nextInt();
+
+        for(int i = numero; i<= maximo;i++){
+            if(i % 7 == 0){
+                continue;
+            }
+            System.out.println(" O valor de i é:" + i);
+        }
+
+    }
+}
+
+
+    /*
+
+
+
+     System.out.println("Digite um número:");
         int numero = scan.nextInt();
 
         System.out.println("Digite um limite:");
@@ -20,6 +41,4 @@ public class BreakContinue3 {
                 continue; // Se o número for multiplo de 7, ele pedi pra continuar;
             }
             System.out.println("O valor de i é:" + i);
-        }
-    }
-}
+     */

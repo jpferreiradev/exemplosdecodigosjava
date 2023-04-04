@@ -32,13 +32,6 @@ public class Cliente {
         this.cpf = cpf;
     }
 
-    public void consultaCliente() {
-        System.out.println("-------------");
-        //System.out.println("Nome do cliente:" + this.getNome());
-        System.out.println("CPF do cliente: " + dc.format(this.getCpf()));
-
-    }
-
 
     public void cadastroClinete() {
         System.out.println("Digite o seu nome e o seu CPF:");
@@ -49,6 +42,17 @@ public class Cliente {
         System.out.println("Seu nome é: " + nome + " e o seu CPF é: " + dc.format(this.getCpf()));
 
     }
+
+
+    public void consultaCliente() {
+        System.out.println("-------------");
+        //System.out.println("Nome do cliente:" + this.getNome());
+        System.out.println("CPF do cliente: " + dc.format(this.getCpf()));
+
+    }
+
+
+
 
 
 
