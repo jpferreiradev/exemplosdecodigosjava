@@ -6,22 +6,14 @@ import java.util.Scanner;
 public class APS {
     public static void main(String[] args) {
 
-    Cliente c1 = new Cliente();
-    Cadeira c2 = new Cadeira(3,10);
 
+        Cliente clientes[] = new Cliente[40];
+        Cadeira cadeiras[] = new Cadeira[40];
 
-   c1.cadastroClinete();
-   c1.consultaCliente();
-
-
-
-
-
-
-
-
-
-
+        clientes[0] = new Cliente();
+        clientes[1] = new Cliente();
+        cadeiras[0] = new Cadeira(55,8);
+        cadeiras[1] = new Cadeira(33,2);
 
 
 
@@ -30,5 +22,18 @@ public class APS {
     }
 
 
-
 }
+
+/*
+
+        Cliente c1 = new Cliente();
+        Cliente c2 = new Cliente();
+
+
+        c1.cadastroClinete();
+        c2.cadastroClinete();
+        c1.consultaCliente();
+        c2.consultaCliente();
+
+
+ */

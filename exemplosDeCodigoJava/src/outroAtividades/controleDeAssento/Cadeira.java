@@ -5,9 +5,10 @@ public class Cadeira extends Cliente {
     private int assento;
     private int fileira;
 
-    Cadeira(int assento, int fileira) {
+    public Cadeira(int assento, int fileira) {
         this.assento = assento;
         this.fileira = fileira;
+
     }
 
     public int getAssento() {
@@ -26,11 +27,16 @@ public class Cadeira extends Cliente {
         this.fileira = fileira;
     }
 
-    public void reservaAssento(){
+    public void reservaAssento() {
+        this.fileira++;
+        this.assento++;
+        this.cpf++;
+        System.out.println("Reserva feita com sucesso!");
 
     }
 
-    public void cancelaAssento(){
+    public void cancelaAssento() {
+        this.cpf--;
 
     }
 
