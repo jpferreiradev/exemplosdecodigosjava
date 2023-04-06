@@ -10,13 +10,12 @@ public class atividade1 {
         int[] a = new int[5];
         int[] b = new int[a.length];
 
-        for(int i = 0; i < a.length;i++){
+        for (int i = 0; i < a.length; i++) {
 
             System.out.println("Digite um valor da posição:" + i);
             a[i] = scan.nextInt();
             b[i] = a[i];
         }
-
         System.out.println("A = ");
         for(int i = 0; i< a.length; i++){
             System.out.print(a[i] + " ");
@@ -28,11 +27,17 @@ public class atividade1 {
             System.out.print(b[i] + " " );
         }
         System.out.println();
+
     }
+
 }
 
-/*
 
+
+
+
+
+/*
                 for(int i = 0;i < a.length;i++) {
                 for (int i = 0; i < b.length; i++)
                 System.out.println("Os valores de A são: " + a[i]);
