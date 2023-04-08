@@ -16,7 +16,14 @@ public class atividade5 {
             vetorB[i] = vetorA[i] * i;
         }
 
+        for(int i = 0; i < vetorA.length; i++){
+            System.out.print(vetorA[i] + " ");
+        }
+        System.out.println();
 
-
+        for(int i = 0;i < vetorB[i]; i++ ){
+            System.out.println(vetorB[i] + " ");
+        }
+        System.out.println();
     }
 }
