@@ -5,7 +5,7 @@ public class atividade4 {
 
         Scanner scan = new Scanner(System.in);
 
-        int a[] = new int[15];
+        int a[] = new int[5];
         int b[] = new int[a.length];
         double vetor[] = new double[a.length];
 

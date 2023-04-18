@@ -7,27 +7,26 @@ public class atividade1 {
 
         Scanner scan = new Scanner(System.in);
 
-        int[] a = new int[5];
-        int[] b = new int[a.length];
+        int[] vetorA = new int[5];
+        int[] vetorB = new int[vetorA.length];
 
-        for (int i = 0; i < a.length; i++) {
-
-            System.out.println("Digite um valor da posição:" + i);
-            a[i] = scan.nextInt();
-            b[i] = a[i];
+        for (int i = 0; i < vetorA.length; i++) {
+            System.out.println("Digite o valor da posição: " + i);
+            vetorA[i] = scan.nextInt();
+            vetorB[i] = vetorA[i];
         }
-        System.out.println("A = ");
-        for(int i = 0; i< a.length; i++){
-            System.out.print(a[i] + " ");
-        }
-        System.out.println();
 
-        System.out.println("B = ");
-        for(int i = 0; i < b.length;i++){
-            System.out.print(b[i] + " " );
+        System.out.println("Vetor A = ");
+        for(int i = 0; i < vetorA.length; i++){
+            System.out.print(vetorA[i] + " ");
         }
         System.out.println();
 
+        System.out.println("Vetor B = ");
+        for(int i = 0; i < vetorB.length; i++){
+            System.out.print(vetorB[i] + " ");
+        }
+        System.out.println();
     }
 
 }
@@ -53,3 +52,9 @@ public class atividade1 {
 
 
  */
+
+  /*
+        for(int i = 0; i < vetorA.length; i++){
+            vetorB[i] = vetorA[i];
+        }
+       */

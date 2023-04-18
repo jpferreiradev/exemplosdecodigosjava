@@ -12,7 +12,7 @@ public class atividade6 {
         int vetorC[] = new int[vetorA.length + vetorB.length];
 
         for (int i = 0; i < vetorA.length; i++) {
-            System.out.println("Digite um número inteiro: ");
+            System.out.println("Digite uma posição: " + i);
             vetorA[i] = scan.nextInt();
             vetorC[i] = vetorA.length + vetorB.length;
 
