@@ -19,7 +19,7 @@ public class Arrays {
         System.out.println("O valor da temperatura do dia 1:" + temperaturas[3]);
         System.out.println("O valor da temperatura do dia 1:" + temperaturas[4]);
 
-        // Tamanho do array
+            // Tamanho do array
         System.out.println("O tamanho do arryay: " + temperaturas.length);
 
         System.out.println("Valores do array: " + temperaturas); // Aqui vai mostrar o endereço de mémoria em que esse Array está apotando, foi reservado pelo Java;

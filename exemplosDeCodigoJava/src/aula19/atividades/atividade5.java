@@ -5,7 +5,7 @@ import java.util.Scanner;
 public class atividade5 {
     public static void main(String[] args) {
 
-        int vetorA[] = new int[10];
+        int vetorA[] = new int[5];
         int vetorB[] = new int[vetorA.length];
 
         Scanner scan = new Scanner(System.in);
@@ -16,13 +16,15 @@ public class atividade5 {
             vetorB[i] = vetorA[i] * i;
         }
 
+        System.out.println("A = ");
         for(int i = 0; i < vetorA.length; i++){
             System.out.print(vetorA[i] + " ");
         }
         System.out.println();
 
-        for(int i = 0;i < vetorB[i]; i++ ){
-            System.out.println(vetorB[i] + " ");
+        System.out.println("B = ");
+        for(int i = 0;i < vetorB.length; i++ ){
+            System.out.print(vetorB[i] + " ");
         }
         System.out.println();
     }
