@@ -11,7 +11,7 @@ public class atividade3 {
 
         Scanner scan = new Scanner(System.in);
 
-        int a[] = new int[5];
+        int a[] = new int[15];
         int b[] = new int[a.length];
 
         for(int i = 0;i < a.length;i++){

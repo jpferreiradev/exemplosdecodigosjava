@@ -5,7 +5,7 @@ import java.util.Scanner;
 public class atividade5 {
     public static void main(String[] args) {
 
-        int vetorA[] = new int[5];
+        int vetorA[] = new int[10];
         int vetorB[] = new int[vetorA.length];
 
         Scanner scan = new Scanner(System.in);

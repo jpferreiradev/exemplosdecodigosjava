@@ -13,11 +13,18 @@ public class atividade8 {
 
 
         for (int i = 0; i < vetorA.length; i++) {
-            System.out.println("Digite um posição: " + i);
+            System.out.println("Digite um posição A: " + i);
             vetorA[i] = scan.nextInt();
             vetorB[i] = vetorA[i];
-            vetorC[i] = vetorA[i] * vetorB[i];
+            //vetorC[i] = vetorA[i] * vetorB[i];
+        }
 
+        for (int i = 0; i < vetorB.length; i++) {
+            System.out.println("Digite um posição B: " + i);
+            vetorB[i] = scan.nextInt();
+        }
+        for (int i = 0; i < vetorC.length; i++) {
+            vetorC[i] = vetorA[i] * vetorB[i];
         }
 
         System.out.println("A = ");

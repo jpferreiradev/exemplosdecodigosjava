@@ -1,5 +1,6 @@
 package aula19.atividades;
 
+import java.text.DecimalFormat;
 import java.util.Scanner;
 
 public class atividade9 {
@@ -10,17 +11,26 @@ public class atividade9 {
 
         int vetorA[] = new int[5];
         int vetorB[] = new int[vetorA.length];
-        float vetorC[] = new float[vetorB.length];
-        
+        // Usei tipo float, mas a professora usou tipo double
+        double vetorC[] = new double[vetorA.length];
+
 
 
         for(int i = 0; i < vetorA.length; i++){
-            System.out.println("Digite uma posição:" + i);
+            System.out.println("Digite uma posição A:" + i);
             vetorA[i] = scan.nextInt();
             vetorB[i] = vetorA[i];
-            vetorC[i] = vetorA[i] / vetorC[i];
-
+            //vetorC[i] = vetorA[i] / vetorC[i];
         }
+
+        for(int i = 0; i < vetorB.length; i++){
+            System.out.println("Digite uma posição B: " + i);
+            vetorB[i] = scan.nextInt();
+        }
+
+       for(int i = 0; i < vetorC.length;i++){
+           vetorC[i] = vetorA[i] / vetorB[i];
+       }
 
         System.out.println("Vetor A = ");
         for(int i = 0; i < vetorA.length;i++){
@@ -34,8 +44,11 @@ public class atividade9 {
         }
         System.out.println();
 
+        DecimalFormat df = new DecimalFormat("###,###.##");
+
         System.out.println("Vetor C = ");
         for(int i = 0; i < vetorC.length;i++){
+            //System.out.print(df.format(vetorC[i]) + " ");
             System.out.print(vetorC[i] + " ");
         }
 
@@ -43,3 +56,5 @@ public class atividade9 {
 
 }
 
+
+//

@@ -13,10 +13,20 @@ public class atividade7 {
         int vetorC[] = new int[vetorB.length];
 
         for (int i = 0; i < vetorA.length; i++) {
-            System.out.println(" Digite um número:" + i);
+            System.out.println(" Digite um posição A:" + i);
             vetorA[i] = scan.nextInt();
             vetorB[i] = vetorA[i];
+            //vetorC[i] = vetorA[i] - vetorB[i];
+        }
+
+        for(int i = 0; i < vetorB.length;i++){
+            System.out.println("Digite um posição B: " + i);
+            vetorB[i] = scan.nextInt();
+
+        }
+        for(int i = 0; i < vetorC.length; i++){
             vetorC[i] = vetorA[i] - vetorB[i];
+
         }
 
 
@@ -40,3 +50,5 @@ public class atividade7 {
 
     }
 }
+
+// Mesma coisa da questão 6.
