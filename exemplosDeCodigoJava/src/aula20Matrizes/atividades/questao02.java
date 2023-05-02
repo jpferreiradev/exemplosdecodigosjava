@@ -6,11 +6,14 @@ public class questao02 {
     public static void main(String[] args) {
 
 
+
+        // Criar numeros aleatorios
+        Random numeroRandom = new Random();
+
+                                            // linha e coluna
         int numerosAleatorios[][] = new int[10][10];
 
-       Random numeroRandom = new Random();
-
-       for(int i = 0; i < numerosAleatorios.length;i++){
+        for(int i = 0; i < numerosAleatorios.length;i++){
            for(int j = 0; i < numerosAleatorios[i].length;j++){
                numerosAleatorios[i][j] = numeroRandom.nextInt(100);
            }
