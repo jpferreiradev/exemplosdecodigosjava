@@ -6,32 +6,32 @@ public class questao02 {
     public static void main(String[] args) {
 
 
+        Random numerosAleatorios = new Random();
 
-        // Criar numeros aleatorios
-        Random numeroRandom = new Random();
-
-                                            // linha e coluna
-        int numerosAleatorios[][] = new int[10][10];
-
-        for(int i = 0; i < numerosAleatorios.length;i++){
-           for(int j = 0; i < numerosAleatorios[i].length;j++){
-               numerosAleatorios[i][j] = numeroRandom.nextInt(100);
-           }
-           System.out.println(numerosAleatorios[i]);
-       }
+        int valoresAleatorios[][] = new int[10][10];
 
 
 
-
-
-
-
-
-
+        // gerando os numeros aleatorios
+        for(int i = 0; i < valoresAleatorios.length; i++){
+            for(int j = 0; j < valoresAleatorios[i].length;j++){
+                valoresAleatorios[i][j] = numerosAleatorios.nextInt(10);
+            }
+        }
+        // mostrando a matriz com os numeros
+        for(int i = 0; i < valoresAleatorios.length;i++){
+            for(int j = 0; j < valoresAleatorios[i].length;j++){
+                System.out.print(valoresAleatorios[i][j] + " ");
+            }
+            System.out.println();
+        }
 
 
     }
+
+
 }
+
 
 
 /*

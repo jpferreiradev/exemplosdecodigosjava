@@ -1,9 +1,8 @@
 package aula20Matrizes.atividades;
 
-import java.util.Locale;
 import java.util.Scanner;
 
-public class atividade {
+public class atividadeOutraList {
     public static void main(String[] args) {
 
         //Locale.setDefault(Locale.US); // Aceitar o . como separador de decimais
