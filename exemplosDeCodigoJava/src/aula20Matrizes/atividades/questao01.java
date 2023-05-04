@@ -16,6 +16,7 @@ public class questao01 {
             }
         }
 
+        // Verificando qual é maior valor da matriz
         int maior = 0;
         int linha = 0;
         int coluna = 0;
@@ -30,6 +31,7 @@ public class questao01 {
             }
         }
 
+        // Mostrando a matriz
         for (int i = 0; i < numerosAleatorios.length; i++) {
             for (int j = 0; j < numerosAleatorios[i].length; j++) {
                 System.out.print(numerosAleatorios[i][j] + " ");
