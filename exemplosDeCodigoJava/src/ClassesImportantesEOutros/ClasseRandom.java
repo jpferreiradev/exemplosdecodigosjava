@@ -1,4 +1,4 @@
-package ClassesImportantes;
+package ClassesImportantesEOutros;
 
 import java.util.Random;
 
