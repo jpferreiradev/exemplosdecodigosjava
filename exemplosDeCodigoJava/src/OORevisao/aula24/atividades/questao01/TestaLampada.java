@@ -13,9 +13,16 @@ public class TestaLampada {
         lampada.tipoLuz = "Amarelo";
         lampada.tipoAbajur = true;
 
-        // Array de tipos - String
-        //lampada.tipos = new String[5];
-        //lampada.tipos[0] = "Abajur";
-        //lampada.tipos[1] = "Lampões";
+        Lampada lampadaDois = new Lampada();
+
+
+
+
+
     }
 }
+
+// Array de tipos - String
+//lampada.tipos = new String[5];
+//lampada.tipos[0] = "Abajur";
+//lampada.tipos[1] = "Lampões";

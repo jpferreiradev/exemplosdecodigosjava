@@ -6,10 +6,14 @@ public class TestaLivroLivraria {
 
 
         LivroDeLivraria livro = new LivroDeLivraria();
+        LivroDeLivraria livroDois = new LivroDeLivraria();
 
         livro.nomeLivro = "Java,como programar";
         livro.nomeAutor = "James Goslang";
         livro.precoLivro = 70.0;
+
+
+
 
     }
 }

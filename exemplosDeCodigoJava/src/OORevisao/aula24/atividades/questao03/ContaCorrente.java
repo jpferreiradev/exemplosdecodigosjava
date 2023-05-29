@@ -2,10 +2,12 @@ package OORevisao.aula24.atividades.questao03;
 
 public class ContaCorrente {
 
-    int numeroConta;
+    String numero;
+    String agencia;
     double saldoConta;
-    int limiteConta;
+    double limiteConta;
     String status;
+    boolean especial;
 
 
 }

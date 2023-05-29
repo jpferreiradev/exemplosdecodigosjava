@@ -5,9 +5,11 @@ public class TestaLivro {
 
         Livro livro = new Livro();
 
+
         livro.nomeLivro = "Java, como programar";
         livro.nomeAutor = "James Golang";
         livro.tema = "Informática";
+
 
         System.out.println("Nome do livro:" + livro.nomeLivro);
 
