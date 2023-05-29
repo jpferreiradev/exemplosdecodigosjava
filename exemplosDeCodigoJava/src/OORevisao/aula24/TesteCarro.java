@@ -20,6 +20,7 @@ public class TesteCarro {
         fusca.capacidadeCombustivel = 30;
         fusca.consumoCombustivel = 0.15;
 
+        //Carro ferrari = new Carro();
 
 
     }
