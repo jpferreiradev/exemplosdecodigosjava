@@ -6,13 +6,13 @@ public class Aluno {
 
     Scanner scan = new Scanner(System.in);
 
-    String []nomes;
-    int []matriculas;
-    String []cursos;
-    String []disciplinas;
-    double[]notas;
+    String nome;
+    int matricula;
+    String curso;
+    String[]disciplinas;
+    double[][] notas;
 
-    void cadastrarAluno(){
+    void cadastrarAluno() {
 
         System.out.println("Digite o seu nome:");
         String nome = scan.nextLine();
@@ -25,15 +25,22 @@ public class Aluno {
     }
 
 
-    double validarNota(){
-       if(notas.length >= 7){
-           System.out.println("Aluno aprovado!");
-       } else{
-           System.out.println("Aluno reprovado");
-       }
-    return notas[2];
+    double validarNota() {
+        if (notas.length >= 7) {
+            System.out.println("Aluno aprovado!");
+        } else {
+            System.out.println("Aluno reprovado");
+        }
+        return notas.length;
     }
 
+    String cadastraDisciplinas() {
+
+        System.out.println("Digite o nome das suas disciplinas:");
+        //disciplinas[0] = scan.nextInt();
+
+        return disciplinas[2];
+    }
 
 
 }
