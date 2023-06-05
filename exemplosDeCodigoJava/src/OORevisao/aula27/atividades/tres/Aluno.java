@@ -10,7 +10,7 @@ public class Aluno {
     int matricula;
     String curso;
     String[]disciplinas;
-    double[][] notas;
+    double[][]notas;
 
     void cadastrarAluno() {
 

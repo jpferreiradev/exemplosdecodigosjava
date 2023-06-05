@@ -6,7 +6,7 @@ public class TestaLampada {
         Lampada lampada = new Lampada();
 
         lampada.ligarLampada();
-        lampada.desligarLampada();
+        //lampada.desligarLampada();
     }
 
 }
