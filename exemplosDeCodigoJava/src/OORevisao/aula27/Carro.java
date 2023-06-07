@@ -7,6 +7,8 @@ public class Carro {
     double capacidadeCombustivel;
     double consumoCombustivel;
 
+
+
     //  Método simples
     void exibirAutonomia() {
 
