@@ -4,6 +4,8 @@ public class MinhaCalculadora {
 
     // Nessa classe não vamos declarar nenhum atributos, apenas métodos
 
+
+    // Aqui temos um exemplo de sobrecarga de métodos;
     public int soma( int num1, int num2){
         return num1 + num2;
     }

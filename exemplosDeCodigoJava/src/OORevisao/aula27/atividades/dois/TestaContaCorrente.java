@@ -6,12 +6,12 @@ public class TestaContaCorrente {
         ContaCorrente conta = new ContaCorrente();
 
         conta.numeroConta = 1234;
-        conta.saldoConta = -200;
+        conta.saldoConta = 200;
         conta.limiteConta = 500;
         conta.contaEspecial = false;
 
         conta.validaConta();
-
+        conta.deposita();
 
 
     }
