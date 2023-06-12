@@ -10,8 +10,9 @@ public class TestaContaCorrente {
         conta.limiteConta = 500;
         conta.contaEspecial = false;
 
-        conta.validaConta();
-        conta.deposita();
+        //conta.validaConta();
+        //conta.deposita();
+        conta.saque();
 
 
     }

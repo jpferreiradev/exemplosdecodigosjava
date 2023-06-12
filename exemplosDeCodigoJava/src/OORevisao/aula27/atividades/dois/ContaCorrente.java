@@ -12,7 +12,6 @@ public class ContaCorrente {
     Scanner scan = new Scanner(System.in);
 
 
-
     void saque(){
         System.out.println("Informe quanto você quer sacar?");
         double valorSaque = scan.nextDouble();

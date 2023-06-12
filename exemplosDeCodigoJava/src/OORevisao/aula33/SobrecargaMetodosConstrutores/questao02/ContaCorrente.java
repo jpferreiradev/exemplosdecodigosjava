@@ -6,10 +6,10 @@ public class ContaCorrente {
 
     Scanner scan = new Scanner(System.in);
 
-    int numeroConta;
-    double saldo;
-    boolean tipoConta;
-    int limite;
+    private int numeroConta;
+    private double saldo;
+    private boolean tipoConta;
+    private int limite;
 
     public ContaCorrente(int numero, double saldo, boolean tipoConta) {
         this.numeroConta = numero;
@@ -17,6 +17,7 @@ public class ContaCorrente {
         this.tipoConta = tipoConta;
 
     }
+
     public ContaCorrente(int numero, double saldo, boolean tipoConta, int limite) {
         this.numeroConta = numero;
         this.saldo = saldo;
@@ -62,40 +63,40 @@ public class ContaCorrente {
         this.limite = limite;
     }
 
-    public void sacar(){
+    public void sacar() {
 
         System.out.println("Informe quanto você quer sacar: ");
         double valorSacar = scan.nextDouble();
         System.out.println("Você está sacando dessa conta: " + valorSacar);
         System.out.println("Seu saldo atual é:" + getSaldo());
-        double valorSacado = valorSacar - getSaldo();
-        System.out.println("Seu atual depois do saque é:" + getSaldo());
+        double valorSacado = getSaldo() - valorSacar ;
+        System.out.println("Seu atual depois do saque é:" + valorSacado);
     }
 
-    public void depositar(){
+    public void depositar() {
         System.out.println("Informe quanto você quer depositar: ");
         double valorDepositar = scan.nextDouble();
         System.out.println("Você está despositando nessa conta: " + valorDepositar);
         System.out.println("Seu saldo atual é:" + getSaldo());
-        double valorSacado = valorDepositar + getSaldo();
-        System.out.println("Seu atual depois do deposito é:" + getSaldo());
+        double valorDepositado = getSaldo() + valorDepositar ;
+        System.out.println("Seu atual depois do deposito é:" + valorDepositado);
     }
 
-    public void consultaSaldo(){
+    public void consultaSaldo() {
         System.out.println("Seu saldo atual é:R$ " + getSaldo() + " reais");
     }
 
-    void validaConta(){
-        if(saldo > 0){
+    void validaConta() {
+        if (saldo > 0) {
             System.out.println("Essa conta é válida");
         } else {
             System.out.println("Conta inválida");
         }
     }
 
-    boolean tipoConta(){
+    boolean tipoConta() {
 
-        if(tipoConta == true){
+        if (tipoConta == true) {
             System.out.println("Sua conta é especial");
         } else {
             System.out.println("Sua conta é normal");
