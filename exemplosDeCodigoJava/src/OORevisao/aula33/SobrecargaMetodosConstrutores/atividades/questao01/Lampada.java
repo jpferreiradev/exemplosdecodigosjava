@@ -20,8 +20,6 @@ public class Lampada {
         this.gararantiaMeses = gararantiaMeses;
         this.estadoLampada = estadoLampada;
     }
-
-
     public Lampada() {
 
     }
@@ -76,7 +74,7 @@ public class Lampada {
     }
 
 
-    public boolean getEstadoLampada() {
+    public boolean isEstadoLampada() {
         return estadoLampada;
     }
 
@@ -84,7 +82,7 @@ public class Lampada {
         this.estadoLampada = estadoLampada;
     }
 
-    public boolean getLigada() {
+    public boolean isLigada() {
         return this.ligada;
     }
 
@@ -93,11 +91,13 @@ public class Lampada {
     }
 
     public void ligar() {
-        ligada = (true);
+        //ligada = (true);
+        setLigada(true);
     }
 
     public void desligar() {
-        ligada = (false);
+        //ligada = (false);
+        setLigada(false);
     }
 
     public void estadoLampada() {
@@ -109,8 +109,8 @@ public class Lampada {
 
     }
 
-    void mudarEstado(){
-        if(ligada){
+    public void mudarEstado(){
+        if(isLigada()){
             desligar();
         } else {
             ligar();
