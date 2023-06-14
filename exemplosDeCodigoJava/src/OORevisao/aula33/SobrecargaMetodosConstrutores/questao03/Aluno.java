@@ -16,19 +16,16 @@ public class Aluno {
         this.matricula = matricula;
         this.nomeCurso = nomeCurso;
         this.nomeDisciplinas = new String[3]; // O tamanho do array é dentro do construtor, essa forma foi feita!
-        this.notasDisciplinas = new double[3][4]; //  // O tamanho do array é dentro do construtor, essa forma foi feita!
+        this.notasDisciplinas = new double[3][4]; // O tamanho do array é dentro do construtor, essa forma foi feita!
 
     }
 
-
-    public Aluno(String nome, String nomeCurso) {
-        this.nome = nome;
-        this.nomeCurso = nomeCurso;
-    }
 
     public Aluno() {
-
+        this.nomeDisciplinas = new String[3];
+        this.notasDisciplinas = new double[3][4];
     }
+
 
     public String getNome() {
         return this.nome;
@@ -72,13 +69,79 @@ public class Aluno {
     }
     // Termina aqui!
 
-    void cadastro(){
-        System.out.println("Informe o seu nome: ");
-        nome = scan.nextLine();
-        System.out.println("Informe o nome do seu curso: ");
-        nomeCurso = scan.nextLine();
-        System.out.println("Seu nome é : " + getNome() + " e o nome do seu curso é:" + getNomeCurso());
+
+    public void cadastro() {
+        System.out.println("Informe o seu nome:");
+        setNome(scan.nextLine());
+        System.out.println("Informe o nome do seu curso");
+        setNomeCurso(scan.nextLine());
+        System.out.println("Informe a sua matricula:");
+        setMatricula(scan.nextLine());
+        System.out.println("Bem vindo: " + getNome() + " sua matricula é: " + getMatricula() + " e o nome do seu curso é: " + getNomeCurso());
+
+        for (int i = 0; i < notasDisciplinas.length; i++) {
+            System.out.println("Notas da disciplina " + nomeDisciplinas[i]);
+            for (int j = 0; j < notasDisciplinas[i].length; j++) {
+                System.out.print(notasDisciplinas[i][j]);
+            }
+            System.out.println();
+        }
     }
 
+    public boolean verificarAprovado(int indice) {
+
+        double soma = 0;
+
+        if (obterMedia(indice) >= 7) {
+            return true;
+        }
+        return false;
+    }
+
+    private double obterMedia(int indice) {
+
+        double soma = 0;
+
+        for (int i = 0; i < notasDisciplinas[indice].length; i++) {
+            soma += notasDisciplinas[indice][i];
+        }
+        double media = soma / 4;
+        return media;
+    }
+
+    public void cadastroDisciplinaNotas() {
+        for (int i = 0; i < getNomeDisciplinas().length; i++) {
+            System.out.println("Digite o nome da disciplina: ");
+            setNomeDisciplinaPosicao(i, scan.next());
+        }
+        for (int i = 0; i < getNotasDisciplinas().length; i++) {
+            System.out.println("Obtendo notas da disciplina " + getNomeDisciplinas()[i]);
+            for (int j = 0; j < getNotasDisciplinas().length; j++) {
+                System.out.println("Entre com a nota: " + (j + 1));
+                setNotasDisciplinasPosicaoIJ(i, j, scan.nextDouble());
+            }
+        }
+    }
+
+    public void mostraDisciplinasNotas(){
+        for(int i = 0; i < getNomeDisciplinas().length;i++){
+            if(verificarAprovado(i)){
+                System.out.println("Disciplina: " + getNomeDisciplinas()[i] + " foi aprovado.");
+            } else {
+                System.out.println("Disciplina: " + getNotasDisciplinas()[i]+ " reprovado");
+            }
+        }
+    }
+
+    public void setNomeDisciplinaPosicao(int pos, String nomeDisciplina) {
+        this.nomeDisciplinas[pos] = nomeDisciplina;
+    }
+
+    public void setNotasDisciplinasPosicaoIJ(int posI, int posJ, double nota) {
+        this.notasDisciplinas[posI][posJ] = nota;
+    }
 
 }
+
+
+
