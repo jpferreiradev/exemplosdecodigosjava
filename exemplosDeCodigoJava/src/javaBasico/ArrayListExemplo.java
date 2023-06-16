@@ -8,15 +8,16 @@ public class ArrayListExemplo {
         // Criação de um ArrayList
 
         //Classe<tipo> nome do Array = new ArrayList<>();
-        //ArrayList<Integer> numeros = new ArrayList<>();
+        ArrayList<Integer> numeros = new ArrayList<>();
         ArrayList<String> carros = new ArrayList<>(100);
-
+                                                    // Aqui você coloca o tamanho do array;
         // Inserindo dados
         carros.add("Nissan");
         carros.add("Ferrari");
         carros.add("Toyota");
         carros.add("Pejout");
         carros.add("Fusion");
+
 
 
         // eliminar posições que não estão sendo usadas para liberar memoria; Ele só vai mudar internamente, não vai imprimir;
