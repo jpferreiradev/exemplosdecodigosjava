@@ -1,4 +1,4 @@
-package OORevisao.aula34;
+package OORevisao.aula34MetodosEstaticos;
 
 public class MinhaCalculadora {
 
