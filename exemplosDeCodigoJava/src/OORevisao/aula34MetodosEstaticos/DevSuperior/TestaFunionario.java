@@ -7,10 +7,18 @@ public class TestaFunionario {
         Funcionario y = new Funcionario("João", 80.0,10.0);
 
 
+
+
+        System.out.println(y.valorPago());
+        System.out.println(x.valorPago());
+
+
+
+
+        //Exemplo de um método estatico;
+        System.out.println("Método abstrato em baixo!");
         double resultado = CalculadoraDeSalario.valorPago(100.0, 7.0);
-
-        //double total = Funcionario.valorPago();
-
         System.out.println(resultado);
     }
 }
+//double total = Funcionario.valorPago();

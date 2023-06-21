@@ -17,5 +17,8 @@ public class Funcionario {
         return valorPorHora * horasTrabalhadas;
     }
 
+    public double diminuir(){
+        return valorPorHora - horasTrabalhadas;
+    }
 
 }
