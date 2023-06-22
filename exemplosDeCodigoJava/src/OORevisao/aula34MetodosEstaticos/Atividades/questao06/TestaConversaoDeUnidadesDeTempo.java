@@ -1,20 +1,17 @@
 package OORevisao.aula34MetodosEstaticos.Atividades.questao06;
 
+import java.util.Scanner;
+
 public class TestaConversaoDeUnidadesDeTempo {
     public static void main(String[] args) {
 
-        double valorMinuto = 60;
-        double valorHora = 60;
-        double valorDia = 24;
-        double valorSemana = 7;
-        double valorMes= 60;
-        double valorAno = 365.25;
-
-        double conversaoValorMinuto = valorMinuto / 60;
-        System.out.println(conversaoValorMinuto);
-
-
-
+        ConversaoDeUnidadesDeTempo.conversaoValorMinuto();
+        ConversaoDeUnidadesDeTempo.conversaoValorHora();
+        ConversaoDeUnidadesDeTempo.conversaoValorDia();
+        ConversaoDeUnidadesDeTempo.conversaoValorDia();
+        ConversaoDeUnidadesDeTempo.conversaoValorSemana();
+        ConversaoDeUnidadesDeTempo.conversaoValorMes();
+        ConversaoDeUnidadesDeTempo.conversaoValorAno();
 
     }
 }
