@@ -40,11 +40,11 @@ public class Calculadora {
     }
 
     // fatorial(5) = 5 * fatorial(4)
-    // fatorial(5) = 4 * fatorial(3)
-    // fatorial(5) = 3 * fatorial(2)
-    // fatorial(5) = 2 * fatorial(1)
-    // fatorial(5) = 1 * fatorial(0)
-    // fatorial(5) = 1;
+    // fatorial(4) = 4 * fatorial(3)
+    // fatorial(3) = 3 * fatorial(2)
+    // fatorial(2) = 2 * fatorial(1)
+    // fatorial(1 ) = 1 * fatorial(0)
+    // fatorial(0) = 1;
     public static int fatorial(int num) {
 
         if (num == 0) {
