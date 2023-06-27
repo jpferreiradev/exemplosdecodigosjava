@@ -1,4 +1,4 @@
-package OORevisao.aula35.Recursividade.OutroExemplo;
+package OORevisao.aula35.Recursividade.OutrosExemplos;
 
 public class Um {
     private static int recursivdade(int number) {
