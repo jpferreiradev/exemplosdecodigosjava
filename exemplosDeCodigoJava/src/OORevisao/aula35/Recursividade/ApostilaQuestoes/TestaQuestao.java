@@ -5,7 +5,7 @@ public class TestaQuestao {
 
 
         for( int numero = 0; numero < 10; numero++){
-            System.out.println(Questao01.primeiraSoma(5));
+            System.out.print(Questao01.primeiraSoma(2) + " ");
         }
 
     }
