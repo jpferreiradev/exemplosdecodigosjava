@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+
 package OORevisao.aula34MetodosEstaticos.DevSuperior;
 
 public class CalculadoraDeSalario {
@@ -7,8 +7,6 @@ public class CalculadoraDeSalario {
         return valorPorHora * horasTrabalhados;
     }
 }
-=======
-package OORevisao.aula34MetodosEstaticos.DevSuperior;
 
 public class CalculadoraDeSalario {
 
@@ -20,4 +18,4 @@ public class CalculadoraDeSalario {
         return valorPorHora + horasTrabalhadas;
     }
 }
->>>>>>> main
+
