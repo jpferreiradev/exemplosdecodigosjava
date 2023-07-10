@@ -3,18 +3,11 @@ package OORevisao.aula34MetodosEstaticos.DevSuperior;
 
 public class CalculadoraDeSalario {
 
-    public static double valorPago(double valorPorHora,double horasTrabalhados){
-        return valorPorHora * horasTrabalhados;
-    }
-}
-
-public class CalculadoraDeSalario {
-
-    public static double valorPago(double valorPorHora,double horasTrabalhados){
+    public static double valorPago(double valorPorHora, double horasTrabalhados) {
         return valorPorHora * horasTrabalhados;
     }
 
-    public static double soma(double valorPorHora,double horasTrabalhadas){
+    public static double soma(double valorPorHora, double horasTrabalhadas) {
         return valorPorHora + horasTrabalhadas;
     }
 }

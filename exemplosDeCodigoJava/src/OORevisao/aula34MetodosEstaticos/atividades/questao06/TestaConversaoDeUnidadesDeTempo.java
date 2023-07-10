@@ -1,4 +1,4 @@
-package OORevisao.aula34MetodosEstaticos.Atividades.questao06;
+package OORevisao.aula34MetodosEstaticos.atividades.questao06;
 
 import java.util.Scanner;
 

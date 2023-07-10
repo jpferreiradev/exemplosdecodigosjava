@@ -3,7 +3,7 @@ package OORevisao.aula34MetodosEstaticos.ExemploDois;
 
 public class TesteEstatico {
 
-    public static void mensagem(){
+    public static void mensagem() {
         System.out.println("Esse é um exemplo de um método estatico");
     }
 }

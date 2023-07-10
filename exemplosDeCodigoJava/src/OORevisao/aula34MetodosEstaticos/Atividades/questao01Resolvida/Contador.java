@@ -4,17 +4,19 @@ public class Contador {
 
     static int cont;
 
-    public Contador(){
+    public Contador() {
         cont++;
     }
 
-    public static void incrementar(){
+    public static void incrementar() {
         cont++;
     }
-    public static void zerar(){
+
+    public static void zerar() {
         cont = 0;
     }
-    public static int obterValor(){
+
+    public static int obterValor() {
         return cont;
     }
 

@@ -1,4 +1,4 @@
-package OORevisao.aula34MetodosEstaticos.Atividades.questao01Resolvida;
+package OORevisao.aula34MetodosEstaticos.atividades.questao01Resolvida;
 
 public class TestaContador {
 
@@ -8,26 +8,26 @@ public class TestaContador {
 
     public static void main(String[] args) {
 
-      imprimirValor();
+        imprimirValor();
 
-      Contador.incrementar();
+        Contador.incrementar();
 
-      imprimirValor();
+        imprimirValor();
 
-      Contador.zerar();
+        Contador.zerar();
 
-      Contador.incrementar();
-      Contador.incrementar();
-      Contador.incrementar();
+        Contador.incrementar();
+        Contador.incrementar();
+        Contador.incrementar();
 
 
-      imprimirValor();
+        imprimirValor();
 
-      Contador c1 = new Contador();
-      Contador c2 = new Contador();
-      Contador c3 = new Contador();
+        Contador c1 = new Contador();
+        Contador c2 = new Contador();
+        Contador c3 = new Contador();
 
-      imprimirValor();
+        imprimirValor();
     }
 
 

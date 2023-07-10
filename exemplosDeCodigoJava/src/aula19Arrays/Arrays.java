@@ -5,7 +5,7 @@ public class Arrays {
 
         // Boa prática
         // Declarar o tipo do array,[]
-        double[] temperaturas = new double[365];
+        double[] temperaturas = new double[10];
 
         temperaturas[0] = 31.3;
         temperaturas[1] = 33.7;

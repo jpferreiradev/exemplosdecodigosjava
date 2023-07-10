@@ -3,21 +3,21 @@ package OORevisao.aula34MetodosEstaticos;
 public class MinhaCalculadora {
 
 
-    public static int soma(int num1, int num2){
+    public static int soma(int num1, int num2) {
         return num1 + num2;
     }
 
-    public static double soma( double num1, double num2){
+    public static double soma(double num1, double num2) {
         return num1 + num2;
     }
 
-    public static int soma(int num1, int num2,int num3){
+    public static int soma(int num1, int num2, int num3) {
         return num1 + num2 + num3;
     }
 
-    public static int soma(int[] vetoresInteiros){
+    public static int soma(int[] vetoresInteiros) {
         int total = 0;
-        for(int i =0; i < vetoresInteiros.length; i++){
+        for (int i = 0; i < vetoresInteiros.length; i++) {
             total += vetoresInteiros[i];
 
         }

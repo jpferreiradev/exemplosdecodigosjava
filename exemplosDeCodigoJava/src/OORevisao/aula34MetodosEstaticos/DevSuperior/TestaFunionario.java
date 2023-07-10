@@ -4,16 +4,12 @@ package OORevisao.aula34MetodosEstaticos.DevSuperior;
 public class TestaFunionario {
     public static void main(String[] args) {
 
-        Funcionario x = new Funcionario("Thay",100.0,15.0);
-        Funcionario y = new Funcionario("João", 80.0,10.0);
-
-
+        Funcionario x = new Funcionario("Thay", 100.0, 15.0);
+        Funcionario y = new Funcionario("João", 80.0, 10.0);
 
 
         System.out.println(y.valorPago());
         System.out.println(x.valorPago());
-
-
 
 
         //Exemplo de um método estatico;

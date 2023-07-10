@@ -4,7 +4,7 @@ import java.util.Scanner;
 
 public class ConversaoDeUnidadesDeTempo {
 
-    public  static Scanner scan = new Scanner(System.in);
+    public static Scanner scan = new Scanner(System.in);
 
     static double valorMinuto = 60;
     static double valorHora = 60;
@@ -27,7 +27,7 @@ public class ConversaoDeUnidadesDeTempo {
         System.out.println("Digite o valor a ser convertido: ");
         valorDigitado = scan.nextInt();
         double conversao = valorHora * valorDigitado;
-        System.out.println("Em " + valorDigitado + " horas, vão ser "+ conversao + " minutos");
+        System.out.println("Em " + valorDigitado + " horas, vão ser " + conversao + " minutos");
         return conversao;
     }
 
@@ -35,7 +35,7 @@ public class ConversaoDeUnidadesDeTempo {
         System.out.println("Digite o valor a ser convertido: ");
         valorDigitado = scan.nextInt();
         double conversao = valorDia * valorDigitado;
-        System.out.println("Em " + valorDigitado + " dias, iram ser "+ conversao + " horas");
+        System.out.println("Em " + valorDigitado + " dias, iram ser " + conversao + " horas");
         return conversao;
     }
 
@@ -43,21 +43,23 @@ public class ConversaoDeUnidadesDeTempo {
         System.out.println("Digite o valor a ser convertido: ");
         valorDigitado = scan.nextInt();
         double conversao = valorSemana * valorDigitado;
-        System.out.println("Em " + valorDigitado + " semana/as, iram ser "+ conversao + " dias");
+        System.out.println("Em " + valorDigitado + " semana/as, iram ser " + conversao + " dias");
         return conversao;
     }
+
     public static double conversaoValorMes() {
         System.out.println("Digite o valor a ser convertido: ");
         valorDigitado = scan.nextInt();
         double conversao = valorMes * valorDigitado;
-        System.out.println("Em " + valorDigitado + " mês, iram ser "+ conversao + " dias");
+        System.out.println("Em " + valorDigitado + " mês, iram ser " + conversao + " dias");
         return conversao;
     }
+
     public static double conversaoValorAno() {
         System.out.println("Digite o valor a ser convertido: ");
         valorDigitado = scan.nextInt();
         double conversao = valorAno * valorDigitado;
-        System.out.println("Em " + valorDigitado + " ano/anos, iram ser "+ conversao + " dias");
+        System.out.println("Em " + valorDigitado + " ano/anos, iram ser " + conversao + " dias");
         return conversao;
     }
 
