@@ -6,10 +6,17 @@ public class Professor {
     private String departamento;
     private String email;
 
+    Professor(String nome, String departamento,String email){
+        this.nome = nome;
+        this.departamento = departamento;
+        this.email = email;
+    }
 
     Professor(){
 
     }
+
+
 
     public String getNome() {
         return this.nome;

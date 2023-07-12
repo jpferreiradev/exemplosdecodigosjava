@@ -10,6 +10,8 @@ public class Contato {
         this.nome = nome;
         this.telefone = telefone;
         this.email = email;
+    }
+    Contato(){
 
     }
 
@@ -32,6 +34,17 @@ public class Contato {
         this.email = email;
     }
 
+    public String obterInfo(){
+        return "Nome = " + this.nome + ";" +
+                "Telefone:" + this.telefone + ";" +
+                "Email:" + this.email;
+    }
+
+}
+
+
+    // Parecido com metodo toString
+    /*
     @Override
     public String toString() {
         return "Contato{" +
@@ -40,5 +53,7 @@ public class Contato {
                 ", email='" + getEmail() + '\'' +
                 '}';
     }
-}
 
+
+
+ */

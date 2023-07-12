@@ -5,13 +5,13 @@ import java.util.Scanner;
 public class Agenda {
 
     private String nomeAgenda;
-    private Contato contatos;
+    private Contato[] contatos;
 
-    Scanner scan = new Scanner(System.in);
+    //Scanner scan = new Scanner(System.in);
     Agenda(String nomeAgenda){
         this.nomeAgenda = nomeAgenda;
     }
-    Agenda(String nomeAgenda, Contato contatos){
+    Agenda(String nomeAgenda, Contato[] contatos){
         this.nomeAgenda = nomeAgenda;
         this.contatos = contatos;
 
@@ -23,17 +23,35 @@ public class Agenda {
         this.nomeAgenda = nomeAgenda;
     }
 
-    public Contato getContatos() {
+    public Contato[] getContatos() {
         return this.contatos;
     }
 
-    public void setContatos(Contato contatos) {
+    public void setContatos(Contato[] contatos) {
         this.contatos = contatos;
     }
 
-    public void imprimi(){
+    public String obterInfo(){
+            String info = "Nome :" + this.nomeAgenda + "\n";
+
+            if(contatos != null){
+                for(Contato c : contatos){
+                    info += c.obterInfo() + "\n";
+                }
+            }
+
+            return info;
+    }
+
+
+}
+
+/* // Tentei criar um metodo que já chama
+ public void imprimir(){
         System.out.println("Digite o nome da sua agenda: ");
-        nomeAgenda = scan.nextLine();
+         //= scan.nextLine();
         System.out.println("O nome da sua agenda é: " + getNomeAgenda());
     }
-}
+
+
+ */
