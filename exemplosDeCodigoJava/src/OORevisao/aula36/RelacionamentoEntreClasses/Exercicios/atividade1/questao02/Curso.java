@@ -4,14 +4,15 @@ public class Curso {
 
     private String nome;
     private String horario;
+    //private Aluno[] alunos;
 
     Curso(){
 
     }
-    Curso(String nome, String horario){
+    Curso(String nome, String horario, Aluno[]alunos){
         this.nome = nome;
         this.horario = horario;
-
+        //this.alunos = alunos;
     }
 
     public String getNome(){
@@ -28,4 +29,14 @@ public class Curso {
         this.horario = horario;
     }
 
+    /*
+    public Aluno[] getAlunos() {
+        return this.alunos;
+    }
+
+    public void setAlunos(Aluno[] alunos) {
+        this.alunos = alunos;
+    }
+       */
 }
+
