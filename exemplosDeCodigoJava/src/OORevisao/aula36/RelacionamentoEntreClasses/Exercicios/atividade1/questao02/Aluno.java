@@ -6,36 +6,69 @@ public class Aluno {
     private String matricula;
     private double[] notas; // Primeiro erro
 
-    Aluno(){
+    Aluno() {
 
     }
-    Aluno(String nome,String matricula,double[] nota){
+
+    Aluno(String nome, String matricula, double[] nota) {
         this.nome = nome;
         this.matricula = matricula;
         this.notas = nota;
     }
 
-    public String getNome(){
+    public String getNome() {
         return this.nome;
     }
-    public void setNome(String nome){
+
+    public void setNome(String nome) {
         this.nome = nome;
     }
 
-    public String getMatricula(){
+    public String getMatricula() {
         return this.matricula;
     }
-    public void setMatricula(String matricula){
+
+    public void setMatricula(String matricula) {
         this.matricula = matricula;
     }
 
-    public double[] getNotas(){
+    public double[] getNotas() {
         return this.notas;
     }
-    public void setNotas(double[] notas){
+
+    public void setNotas(double[] notas) {
         this.notas = notas;
     }
 
+    public String obterInfo() {
+
+        String info = "Nome Aluno" + nome + ";";
+        info += "Matricula = " + matricula + ";";
+        info += "Notas: ";
+
+        double soma = 0;
+        for (double nota : notas) {
+            soma += nota;
+            info += nota + " ";
+        }
+
+        double media = soma / 4;
+        info += "\n" + "Média = " + media + " ";
+        if( media >= 7){
+            info += "Aprovado";
+        } else {
+            info += "Reprovado";
+        }
+
+        return info;
+    }
+    public double obterMedia(){
+        double soma = 0;
+        for(double nota : notas){
+            soma += nota;
+        }
+        return soma /4;
+    }
 
 }
 

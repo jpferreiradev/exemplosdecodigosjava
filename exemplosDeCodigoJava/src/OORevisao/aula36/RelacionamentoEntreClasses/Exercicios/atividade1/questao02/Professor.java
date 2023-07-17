@@ -2,7 +2,7 @@ package OORevisao.aula36.RelacionamentoEntreClasses.Exercicios.atividade1.questa
 
 public class Professor {
 
-    private String nome;
+    private String nomeProfessor;
     private String departamento;
     private String email;
 
@@ -10,16 +10,16 @@ public class Professor {
 
     }
     Professor(String nome, String departamento, String email){
-        this.nome = nome;
+        this.nomeProfessor = nome;
         this.departamento = nome;
         this.email = email;
     }
 
-    public String getNome(){
-        return this.nome;
+    public String getNomeProfessor(){
+        return this.nomeProfessor;
     }
-    public void setNome(String nome){
-        this.nome = nome;
+    public void setNomeProfessor(String nomeProfessor){
+        this.nomeProfessor = nomeProfessor;
     }
 
     public String getDepartamento(){
@@ -36,6 +36,6 @@ public class Professor {
     }
 
     public String obterInfo(){
-        return "Professor = " + nome;
+        return "Professor = " + nomeProfessor;
     }
 }
