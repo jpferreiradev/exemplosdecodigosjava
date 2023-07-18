@@ -1,10 +1,21 @@
-package OORevisao.aula38HerancaChaveSuper;
+package OORevisao.aula39HerancaoProtected.teste;
+
+import OORevisao.aula39HerancaoProtected.Pessoa;
 
 public class Aluno extends Pessoa {
 
 
     private String curso; // Array com uma dimesão;
     private double[] notas; // Array com duas dimenções;
+
+    public void verificarAcesso(){
+
+        this.nomeVisibilidade = "fdfdfd";
+        super.nomeVisibilidade = "4fedfef";
+
+        this.setNomeVisibilidade("fefef");
+        super.setNomeVisibilidade("jirgjrigj");
+    }
 
     public Aluno(){
         super(); // Ele vai chamar o contrutor da superClass
@@ -38,6 +49,7 @@ public class Aluno extends Pessoa {
     public boolean verificarAprovado() {
         return true;
     }
+
 
     public void metodoQualquer(){
         super.setCpf("5940594059450"); // Fazendo referencia a superClass( Pessoa)

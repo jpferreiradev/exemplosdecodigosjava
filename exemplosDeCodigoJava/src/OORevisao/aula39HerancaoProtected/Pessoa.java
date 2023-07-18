@@ -1,4 +1,4 @@
-package OORevisao.aula38HerancaChaveSuper;
+package OORevisao.aula39HerancaoProtected;
 
 public class Pessoa {
 
@@ -8,7 +8,10 @@ public class Pessoa {
     private String cpf;
     private String telefoneCelular;
 
+    protected String nomeVisibilidade;
+
     public Pessoa() {
+        nomeVisibilidade = "fjkeiofejfi";
     }
 
 
@@ -58,5 +61,12 @@ public class Pessoa {
 
     public void setTelefoneCelular(String telefoneCelular) {
         this.telefoneCelular = telefoneCelular;
+    }
+
+    public String getNomeVisibilidade(){
+        return this.nomeVisibilidade;
+    }
+    public void setNomeVisibilidade(String nomeVisibilidade){
+        this.nomeVisibilidade = nomeVisibilidade;
     }
 }
