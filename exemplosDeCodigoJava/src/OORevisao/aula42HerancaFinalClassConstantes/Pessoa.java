@@ -1,0 +1,70 @@
+package OORevisao.aula42HerancaFinalClassConstantes;
+
+public final class Pessoa {
+
+    // Atributos
+    private String nome;
+    private String endereco;
+    private String telefone;
+    private String cpf;
+    private String telefoneCelular;
+
+    // Construtores
+    public Pessoa() {
+    }
+
+
+    public Pessoa(String nome, String endereco, String telefone) {
+        super();
+        this.nome = nome;
+        this.endereco = endereco;
+        this.telefone = telefone;
+    }
+
+    // Metodos get/ser - Modificadores de acesso
+    public String getNome() {
+        return this.nome;
+    }
+
+    public void setNome(String nome) {
+        this.nome = nome;
+    }
+
+    public String getEndereco() {
+        return this.endereco;
+    }
+
+    public void setEndereco(String endereco) {
+        this.endereco = endereco;
+    }
+
+    public String getTelefone() {
+        return this.telefone;
+    }
+
+    public void setTelefone(String telefone) {
+        this.telefone = telefone;
+    }
+
+    public String getCpf() {
+        return cpf;
+    }
+
+    public void setCpf(String cpf) {
+        this.cpf = cpf;
+    }
+
+    public String getTelefoneCelular() {
+        return this.telefoneCelular;
+    }
+
+    public void setTelefoneCelular(String telefoneCelular) {
+        this.telefoneCelular = telefoneCelular;
+    }
+
+    // Metodo abstratos
+    //public abstract String obterEtiquetaEndereco();
+    //public abstract void imprimirEtiquetaEndereco();
+
+
+}

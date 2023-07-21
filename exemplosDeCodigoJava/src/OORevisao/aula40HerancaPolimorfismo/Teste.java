@@ -7,6 +7,7 @@ public class Teste {
         Pessoa aluno = new Aluno();
         Pessoa professor = new Professor();
 
+
         pessoa.setEndereco("Rua 1, numero 1");
         aluno.setEndereco("Rua 2,numero 2");
         professor.setEndereco("Rua 3, numero 3");
