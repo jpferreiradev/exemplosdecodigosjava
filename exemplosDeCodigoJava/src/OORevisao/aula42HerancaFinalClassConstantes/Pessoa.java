@@ -2,14 +2,12 @@ package OORevisao.aula42HerancaFinalClassConstantes;
 
 public final class Pessoa {
 
-    // Atributos
     private String nome;
     private String endereco;
     private String telefone;
     private String cpf;
     private String telefoneCelular;
 
-    // Construtores
     public Pessoa() {
     }
 
@@ -21,7 +19,7 @@ public final class Pessoa {
         this.telefone = telefone;
     }
 
-    // Metodos get/ser - Modificadores de acesso
+
     public String getNome() {
         return this.nome;
     }
@@ -62,7 +60,6 @@ public final class Pessoa {
         this.telefoneCelular = telefoneCelular;
     }
 
-    // Metodo abstratos
     //public abstract String obterEtiquetaEndereco();
     //public abstract void imprimirEtiquetaEndereco();
 

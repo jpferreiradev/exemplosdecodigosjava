@@ -1,6 +1,6 @@
 package OORevisao.aula42HerancaFinalClassConstantes;
 
-public class Professor {
+public class Professor  {
 
 
     private String departamento;
@@ -40,7 +40,7 @@ public class Professor {
     public String obterEtiquetaEndereco(){
 
         String s = "Endereço do professor: ";
-        //s += super.getEndereco();
+        //                                                                                                                                                                                                                                                                                                                                                                                                                                                                   s += super.getEndereco();
 
         return s;
     }
