@@ -80,11 +80,11 @@ public class ContaBancaria {
 
     @Override
     public String toString() {
-        return "ContaBancaria: " + "\n"+
+        return "ContaBancaria: " + "\n" +
                 "Nome do cliente: " + nomeCliente + "\n" +
-                ", Numero da conta :" + numeroConta +
-                ", Saldo:" + saldo +
-                '}';
+                "Numero da conta :" + numeroConta + "\n" +
+                "Saldo:" + saldo;
+
     }
 }
 

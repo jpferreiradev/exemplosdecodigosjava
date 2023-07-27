@@ -3,8 +3,8 @@ package OORevisao.aula42HerancaFinalClassConstantes;
 public class Aluno {
 
 
-    private String curso; // Array com uma dimesão;
-    private double[] notas; // Array com duas dimenções;
+    private String curso;
+    private double[] notas; // Array com uma dimenções;
 
     public Aluno(){
         super(); // Ele vai chamar o contrutor da superClass
