@@ -4,9 +4,23 @@ import java.text.DecimalFormat;
 import java.util.Scanner;
 
 public class ClasseTeste {
-    public static void main(String []args){
+    public static void main(String[] args) {
 
-        DecimalFormat df = new DecimalFormat();
+        ContaBancaria contajp = new ContaBancaria("jp",001,-60);
+        ContaPoupanca contapaulo = new ContaPoupanca();
+        System.out.println(contajp.toString());
+
+        contajp.sacar();
+        //contajp.depositar();
+
+        //System.out.println(contapaulo.calcularNovoSaldo());
+
+
+    }
+}
+
+/*
+         DecimalFormat df = new DecimalFormat();
         df.applyPattern("#,##0.00");
 
         double valorSacado;
@@ -22,7 +36,7 @@ public class ClasseTeste {
         //System.out.println(contajp.toString());
 
 
-        /*
+
         double valorRendimento = 0.5 / 100;
         double teste = 1.000 * valorRendimento;
         double teste2 = teste + 1.000;
@@ -30,12 +44,16 @@ public class ClasseTeste {
         System.out.println(df.format(teste));
         System.out.println(teste);
         System.out.println(teste2);
-         */
-        //System.out.println(contateste.calcularNovoSaldo());
-        System.out.println(contajp.toString());
+
+    //System.out.println(contateste.calcularNovoSaldo());
+   */
+
+    /*
+    int contador = 0;
+        while (contador < 50) {
+        System.out.println("Repetição nr: " + contador);
+        contador++;
+        }
 
 
-
-
-    }
-}
+     */

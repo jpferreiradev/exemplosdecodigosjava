@@ -12,6 +12,12 @@ public class PessoaJuridica extends Contribuinte{
         super();
     }
 
+    public double calculoImposto(){
+
+
+
+        return 0;
+    }
 
 
 

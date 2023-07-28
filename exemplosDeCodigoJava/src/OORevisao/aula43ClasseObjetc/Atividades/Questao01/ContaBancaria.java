@@ -49,20 +49,21 @@ public class ContaBancaria {
 
         double valorSacado;
         double conversaoSaca;
+        double novoSaldo = getSaldo();
 
         System.out.println("Informe o quanto você quer sacar:");
         valorSacado = scan.nextDouble();
         conversaoSaca = getSaldo() - valorSacado;
-        System.out.println("Seu novo saldo é: " + conversaoSaca);
 
-        if (getSaldo() < 0 || conversaoSaca < 0) {
-            System.out.println("O saldo não pode ser negativo, informe um saldo compativel");
-        } else {
-            System.out.println("Saldo compativel");
+        while (getSaldo() <= -0) {
+            System.out.println("Seu saldo não pode ser negativo...");
+            System.out.println("Informe novamente o seu novo saldo: ");
+            novoSaldo = scan.nextDouble();
+            //valorSacado = scan.nextDouble();
         }
-
+        System.out.println("Seu novo saldo é: " + conversaoSaca);
         return 0;
-
+        //while(getSaldo() < -0 || conversaoSaca < -0){
 
     }
 
@@ -98,5 +99,13 @@ public class ContaBancaria {
                 ", Saldo:" + saldo +
                 '}';
 
+
+ */
+
+/*
+//System.out.println("Saldo compatível");
+        //if (getSaldo() < 0 || conversaoSaca < 0) {
+        //    System.out.println("O saldo não pode ser negativo, informe um saldo compativel");
+        //} else {
 
  */
