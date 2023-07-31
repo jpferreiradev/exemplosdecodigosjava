@@ -1,13 +1,12 @@
 package OORevisao.aula43ClasseObjetc.Atividades.Questao01;
 
-import java.text.DecimalFormat;
+//import java.text.DecimalFormat;
+import java.util.Calendar;
+import java.util.Date;
 
 public class ContaPoupanca extends ContaBancaria {
 
     private double diaRendimento;
-
-    DecimalFormat df = new DecimalFormat();
-
 
     ContaPoupanca() {
 
@@ -25,7 +24,35 @@ public class ContaPoupanca extends ContaBancaria {
         this.diaRendimento = diaRendimento;
     }
 
-    public double calcularNovoSaldo() {
+    @Override
+    public String toString() {
+        String s = "ContaPoupança:";
+        s += "Dia do rendimento:" + diaRendimento;
+        s += "; " + super.toString();
+        s += "]";
+        return s;
+    }
+
+    public boolean calcularNovoSaldo(double taxaRendimento){
+
+        Calendar hoje = Calendar.getInstance();
+
+        if(diaRendimento == hoje.get(Calendar.DAY_OF_MONTH)){
+            this.setSaldo( this.getSaldo() + (this.getSaldo() * taxaRendimento));
+            return true;
+        }
+    return false;
+    }
+
+}
+
+
+/*
+O que foi usado antes da correção do exercicios
+
+ DecimalFormat df = new DecimalFormat();
+
+     public double calcularNovoSaldo() {
 
         df.applyPattern("#,##0.00");
         double conversaoRendimento = 0.5 / 100;
@@ -36,4 +63,6 @@ public class ContaPoupanca extends ContaBancaria {
 
         return 0;
     }
-}
+
+
+ */

@@ -1,0 +1,101 @@
+O que é preciso para trilhar uma careira dev Java
+	Dev Back-end
+	
+	
+	-> Roadmap
+	-> Como estudar
+	-> Avançando
+	-> Conselhos
+
+-----
+ROADMAP
+ Pensamento computacional
+ Logica de programação
+ Paradigma Orientada a objetos
+ 
+ 
+		Logica de programação
+	O que é algoritmo
+	O que é pseudocogio
+	O que é linguagem de programação
+	O que são variaveis
+	Tipos de dados
+	Constantes
+	Como atribuir valores
+	Comentarios
+	Entrada  e saida de dados
+	Concatenação
+	Operadores aritmeticos
+	Operadores de incremento e decremento
+	Operadores de igualdade e relacionais
+	Operadores logicos
+	Precedência de operadores( Matématica básica)
+	Condicionais
+	Estruturas de repetiação
+	Estrutura de dados
+	
+
+Programação orientada a objetos: Paradigmas, esse é Paradigma de OO 
+	O que é orientação a objetos
+	O que são classes
+	O que são objetos
+	Modificadores de acesso
+	Como criar objetos ( Representação de alguma coisa no mundo real)
+	como criar métodos
+	O que é abstração?
+	Abstração por interface
+	Classes e métodos abstratos
+	O que é herança
+	Tipos de herança
+	Encapsulamento
+	O que é polimorfismo
+	Sobrecarga de métodos
+	Sobreescrevita de métodos
+	
+-- A parte depois para estudar a linguagem Java
+	
+	Features novas/ principais APIs do Java
+		Aprenda os seguintes tópicos
+			-Lambda
+			-Stream
+			-Datetime
+			-Optional
+				e funcionalidades novas que vieram do JAva 8 em diante
+				Apis principais 
+				
+		Java 11 - Vark
+		Como funciona os records 
+		
+----- Depois que você conheceu a linguagem Java----------
+
+	Aprenda os seguintes tópicos
+	 -Versionamento de código
+	 - Branch
+	 - Comandos: git add, commit, git clone, git push, git pull, git checkout, git branch
+	 -pull requests
+	 -Merge e como resolver conflistos
+
+
+Banco de dados:
+SQL E NOSQL
+ 	Criar tabela, inserir, atualizar, buscar, excluir dados
+	 Basico sobre joins
+	 Como funciona o NoSQL, básico de Mongo DB
+ 	Spring Data ( Raramente tem que criar uma cuere manualmente, ele já faz tudo sozinho, nem varios joins) 
+ 	
+	 ---------
+	->> Comandos básicos linux, sitemas operacionais
+	 ->> HTTP, REST, API
+	 	-O que são APIs
+		- O que é REST
+	 	- Modelo de maturidade REST
+	 	- Boas práticas REST
+	 	-Status HTTP
+	 	- API RESTUFUL
+	 	
+	 	
+
+	 
+	
+		
+			

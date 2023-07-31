@@ -5,7 +5,7 @@ import java.util.Scanner;
 public class ContaBancaria {
 
     private String nomeCliente;
-    private int numeroConta;
+    private String numeroConta;
     private double saldo;
 
     Scanner scan = new Scanner(System.in);
@@ -14,7 +14,7 @@ public class ContaBancaria {
 
     }
 
-    ContaBancaria(String nomeCliente, int numeroConta, double saldo) {
+    ContaBancaria(String nomeCliente, String numeroConta, double saldo) {
         this.nomeCliente = nomeCliente;
         this.numeroConta = numeroConta;
         this.saldo = saldo;
@@ -29,11 +29,11 @@ public class ContaBancaria {
         this.nomeCliente = nomeCliente;
     }
 
-    public int getNumeroConta() {
+    public String getNumeroConta() {
         return this.numeroConta;
     }
 
-    public void setNumeroConta(int numeroConta) {
+    public void setNumeroConta(String numeroConta) {
         this.numeroConta = numeroConta;
     }
 
@@ -45,38 +45,18 @@ public class ContaBancaria {
         this.saldo = saldo;
     }
 
-    public double sacar() {
 
-        double valorSacado;
-        double conversaoSaca;
-        double novoSaldo = getSaldo();
 
-        System.out.println("Informe o quanto você quer sacar:");
-        valorSacado = scan.nextDouble();
-        conversaoSaca = getSaldo() - valorSacado;
-
-        while (getSaldo() <= -0) {
-            System.out.println("Seu saldo não pode ser negativo...");
-            System.out.println("Informe novamente o seu novo saldo: ");
-            novoSaldo = scan.nextDouble();
-            //valorSacado = scan.nextDouble();
-        }
-        System.out.println("Seu novo saldo é: " + conversaoSaca);
-        return 0;
-        //while(getSaldo() < -0 || conversaoSaca < -0){
-
+    public void depositar(double valor){
+        saldo += valor;
     }
 
-    public double depositar() {
-        double valorDepositado;
-        double conversaoDeposita;
-
-        System.out.println("Informe quanto você quer depositar:");
-        valorDepositado = scan.nextDouble();
-        conversaoDeposita = getSaldo() + valorDepositado;
-        System.out.println("Seu novo saldo é: " + conversaoDeposita);
-
-        return 0;
+    public boolean sacar(double valor){
+        if((saldo - valor) >= 0){
+            saldo -= valor;
+            return true;
+        }
+        return false;
     }
 
     @Override
@@ -109,3 +89,45 @@ public class ContaBancaria {
         //} else {
 
  */
+
+// Metodos criados antes da correção
+
+    /*
+    public double depositar() {
+        double valorDepositado;
+        double conversaoDeposita;
+
+        System.out.println("Informe quanto você quer depositar:");
+        valorDepositado = scan.nextDouble();
+        conversaoDeposita = getSaldo() + valorDepositado;
+        System.out.println("Seu novo saldo é: " + conversaoDeposita);
+
+        return 0;
+    }
+
+       public double sacar() {
+
+        double valorSacado;
+        double conversaoSaca;
+        double novoSaldo = getSaldo();
+
+        System.out.println("Informe o quanto você quer sacar:");
+        valorSacado = scan.nextDouble();
+        conversaoSaca = getSaldo() - valorSacado;
+
+        while (getSaldo() <= -0) {
+            System.out.println("Seu saldo não pode ser negativo...");
+            System.out.println("Informe novamente o seu novo saldo: ");
+            novoSaldo = scan.nextDouble();
+            //valorSacado = scan.nextDouble();
+        }
+        System.out.println("Seu novo saldo é: " + conversaoSaca);
+        return 0;
+        //while(getSaldo() < -0 || conversaoSaca < -0){
+
+    }
+
+
+
+
+     */
