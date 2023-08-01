@@ -24,7 +24,7 @@ public class ClasseTeste {
         ContaPoupanca contaPoupanca = new ContaPoupanca();
         contaPoupanca.setNomeCliente("Cliente Conta Poupança");
         contaPoupanca.setNumeroConta("222222");
-        contaPoupanca.setDiaRendimento(3);
+        contaPoupanca.setDiaRendimento(2);
 
         contaPoupanca.depositar(100);
         realizarSaque(contaPoupanca, 50);

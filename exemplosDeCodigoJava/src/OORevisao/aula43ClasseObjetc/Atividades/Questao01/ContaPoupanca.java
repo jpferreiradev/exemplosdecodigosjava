@@ -35,9 +35,10 @@ public class ContaPoupanca extends ContaBancaria {
 
     public boolean calcularNovoSaldo(double taxaRendimento){
 
-        Calendar hoje = Calendar.getInstance();
+        Calendar hoje = Calendar.getInstance(); // Esse método getInstance vai pegar a data de hoje no Java
 
-        if(diaRendimento == hoje.get(Calendar.DAY_OF_MONTH)){
+        if(diaRendimento == hoje.get(Calendar.DAY_OF_MONTH)){ // Dia de hoje
+            // saldo += saldo * taxaRendimento;
             this.setSaldo( this.getSaldo() + (this.getSaldo() * taxaRendimento));
             return true;
         }
