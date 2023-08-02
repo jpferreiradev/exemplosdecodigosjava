@@ -13,12 +13,12 @@ public class ClasseTeste {
         Professor professor = new Professor();
 
         // Exemplo 2 - Uso de constantes
-        System.out.println(ExemploClasseConstante.URL_BLOG);
-        System.out.println(ExemploClasseConstante.URL_CURSO_COMPLETO);
+        System.out.println(ClasseConstante.URL_BLOG);
+        System.out.println(ClasseConstante.URL_CURSO_COMPLETO);
 
         // Como o atributo não é final, você pode moficiar o valor dela; O valor da URL_BLOG
-        ExemploClasseConstante.URL_BLOG = "Estou modificando esse atributo!";
-        System.out.println(ExemploClasseConstante.URL_BLOG);
+        ClasseConstante.URL_BLOG = "Estou modificando esse atributo!";
+        System.out.println(ClasseConstante.URL_BLOG);
 
         //Exemplo 3
         final int TOTAL = 1; // Nesse caso você pode modificar o valor da variavel final, e transforma em uma CONSTANTE, veja a convenção feita na variavel constante
