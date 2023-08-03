@@ -37,7 +37,7 @@ public class ClasseTeste {
         p6.setCnpj("567-323-789/0004-45");
 
 
-        Contribuinte[] contribuintes = new Contribuinte[6];
+        Contribuinte[] contribuintes = new Contribuinte[6]; // Aqui temos o exemplo de Upcasting ( Conversão de classes no Java)
         contribuintes[0] = p1;
         contribuintes[1] = p2;
         contribuintes[2] = p3;

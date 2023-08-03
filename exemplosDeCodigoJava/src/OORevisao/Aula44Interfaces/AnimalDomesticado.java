@@ -7,5 +7,5 @@ public interface AnimalDomesticado {
     void  levarVeterinario();
     void alimentar();
 
-    public final int ANO = 2023;
+    //public final int ANO = 2023;
 }
