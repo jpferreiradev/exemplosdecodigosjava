@@ -1,6 +1,6 @@
 package OORevisao.aula46InterfacesHerancaoComparacao.Atividades;
 
-public class Quadrado extends Figura2D implements DimensaoSuperficial{
+public class Quadrado extends Figura2D {
 
     private double lado;
 
@@ -12,7 +12,8 @@ public class Quadrado extends Figura2D implements DimensaoSuperficial{
     }
 
     @Override
-    public void calcularArea() {
+    public double calcularArea() {
+        return lado * lado;
 
     }
 }

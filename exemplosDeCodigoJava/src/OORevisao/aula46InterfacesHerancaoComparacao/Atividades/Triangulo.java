@@ -1,6 +1,6 @@
 package OORevisao.aula46InterfacesHerancaoComparacao.Atividades;
 
-public class Triangulo extends Figura2D implements DimensaoSuperficial{
+public class Triangulo extends Figura2D {
 
 
     private double base;
@@ -23,8 +23,8 @@ public class Triangulo extends Figura2D implements DimensaoSuperficial{
     }
 
     @Override
-    public void calcularArea() {
-
+    public double calcularArea() {
+        return ((altura * altura) /2);
     }
 }
 

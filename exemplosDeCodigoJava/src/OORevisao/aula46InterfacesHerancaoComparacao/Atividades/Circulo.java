@@ -1,6 +1,6 @@
 package OORevisao.aula46InterfacesHerancaoComparacao.Atividades;
 
-public class Circulo extends Figura2D implements DimensaoSuperficial{
+public class Circulo extends Figura2D{
 
     private double raio;
 
@@ -13,7 +13,7 @@ public class Circulo extends Figura2D implements DimensaoSuperficial{
     }
 
     @Override
-    public void calcularArea() {
-
+    public double calcularArea() {
+        return (raio * raio) * Math.PI;
     }
 }

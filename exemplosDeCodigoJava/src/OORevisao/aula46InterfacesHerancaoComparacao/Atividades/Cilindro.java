@@ -1,6 +1,6 @@
 package OORevisao.aula46InterfacesHerancaoComparacao.Atividades;
 
-public class Cilindro extends Figura3D implements DimensaoVolumetrica, DimensaoSuperficial{
+public class Cilindro extends Figura3D {
 
 
     private double altura;
@@ -23,12 +23,17 @@ public class Cilindro extends Figura3D implements DimensaoVolumetrica, DimensaoS
     }
 
     @Override
-    public void calcularVolume() {
+    public double calcularArea() {
 
+        double areaBase = Math.PI * (raio * raio);
+        double areaLateral = 2 * Math.PI * raio * altura;
+        double areaTotal = ( 2 * areaBase) + areaLateral;
+
+        return areaTotal;
     }
 
     @Override
-    public void calcularArea() {
-
+    public double calcularVolume() {
+        return Math.PI * ( raio * raio) * altura;
     }
 }

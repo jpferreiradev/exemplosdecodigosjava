@@ -1,11 +1,11 @@
 package OORevisao.aula46InterfacesHerancaoComparacao.Atividades;
 
-public class Piramide extends Figura3D implements DimensaoVolumetrica, DimensaoSuperficial{
+public class Piramide extends Figura3D {
 
     private double altura;
-    private double area;
+    private double arestaBase;
     private double apotema;
-
+    private int numPoliBase;
     private Figura2D base;
 
     public double getAltura() {
@@ -16,12 +16,12 @@ public class Piramide extends Figura3D implements DimensaoVolumetrica, DimensaoS
         this.altura = altura;
     }
 
-    public double getArea() {
-        return this.area;
+    public double getArestaBase() {
+        return this.arestaBase;
     }
 
-    public void setArea(double area) {
-        this.area = area;
+    public void setArestaBase(double arestaBase) {
+        this.arestaBase = arestaBase;
     }
 
     public double getApotema() {
@@ -40,13 +40,27 @@ public class Piramide extends Figura3D implements DimensaoVolumetrica, DimensaoS
         this.base = base;
     }
 
-    @Override
-    public void calcularVolume() {
+    public int getNumPoliBase() {
+        return this.numPoliBase;
+    }
 
+    public void setNumPoliBase(int numPoliBase) {
+        this.numPoliBase = numPoliBase;
     }
 
     @Override
-    public void calcularArea() {
+    public double calcularArea() {
+        if (base != null) {
+            return (numPoliBase * ((arestaBase * apotema) / 2) + base.calcularArea());
+        }
+        return 0;
+    }
 
+    @Override
+    public double calcularVolume() {
+        if(base != null){
+            return (base.calcularArea() * altura) / 3;
+        }
+        return 0;
     }
 }

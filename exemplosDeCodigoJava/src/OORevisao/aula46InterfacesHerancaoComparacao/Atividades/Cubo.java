@@ -1,6 +1,6 @@
 package OORevisao.aula46InterfacesHerancaoComparacao.Atividades;
 
-public class Cubo extends Figura3D implements DimensaoVolumetrica, DimensaoSuperficial{
+public class Cubo extends Figura3D {
 
 
     private double lado;
@@ -14,12 +14,12 @@ public class Cubo extends Figura3D implements DimensaoVolumetrica, DimensaoSuper
     }
 
     @Override
-    public void calcularVolume() {
-
+    public double calcularArea() {
+        return 6 * (lado * lado);
     }
 
     @Override
-    public void calcularArea() {
-
+    public double calcularVolume() {
+        return lado * lado * lado;
     }
 }
