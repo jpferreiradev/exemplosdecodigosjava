@@ -1,4 +1,4 @@
-package OORevisao.ExceptionsMultiplosCatch;
+package OORevisao.Aula48ExceptionsMultiplosCatch;
 
 public class MultiplosCatchJava7 {
     public static void main(String[] args) {

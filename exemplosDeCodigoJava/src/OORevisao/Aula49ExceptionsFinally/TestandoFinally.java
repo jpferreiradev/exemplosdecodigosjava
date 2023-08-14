@@ -1,8 +1,7 @@
-package OORevisao.ExceptionsMultiplosCatch;
+package OORevisao.Aula49ExceptionsFinally;
 
-public class MultiplosCatchGenerico {
+public class TestandoFinally {
     public static void main(String[] args) {
-
 
         int[] numeros = {4, 8, 16, 32, 64, 128};
         int[] denominadores = {2, 0, 4, 8, 0};
@@ -10,15 +9,15 @@ public class MultiplosCatchGenerico {
         for (int i = 0; i < numeros.length; i++) {
             try {
                 System.out.println(numeros[i] + "/" + denominadores[i] + "=" + (numeros[i] / denominadores[i]));
-            } catch (ArithmeticException e) {  // Exceção mais espeficia
+            } catch (ArithmeticException e) {
                 System.out.println("Erro ao dividir por zero");
-            } catch ( Throwable e) { // Exceção generica
-                System.out.println("Ocorreu um erro");
+            } catch (ArrayIndexOutOfBoundsException e){
+                System.out.println("Posição do array inválida");
             }
-
+            finally {
+                System.out.println("Essa linha é impressa sempre após o try ou catch");
+            }
         }
 
     }
-
 }
-
