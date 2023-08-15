@@ -1,33 +1,33 @@
-package OORevisao.aula34MetodosEstaticos.atividades.questao02;
+package OORevisao.aula34MetodosEstaticos.Atividades.questao02;
 
 
 public class Calculadora {
 
-    public int somar(int numeroUm, int numeroDois) {
+    public static int somar(int numeroUm, int numeroDois) {
 
         return numeroUm + numeroDois;
     }
 
-    public int subtrair(int numeroUm, int numeroDois) {
+    public static int subtrair(int numeroUm, int numeroDois) {
 
         return numeroUm - numeroDois;
     }
 
-    public int multiplicar(int numeroUm, int numeroDois) {
+    public  static int multiplicar(int numeroUm, int numeroDois) {
 
         return numeroUm * numeroDois;
 
     }
 
-    public int dividir(int numeroUm, int numeroDois) {
+    public  static int dividir(int numeroUm, int numeroDois) {
         return numeroUm / numeroDois;
     }
 
-    public double elevarPotencia(double numeroUm, double numeroDois) {
+    public static double elevarPotencia(double numeroUm, double numeroDois) {
         return Math.pow(numeroUm, numeroDois);
     }
 
-    public int fatorialNumero() {
+    public static int fatorialNumero() {
 
         int x = 5;
         int f = x;

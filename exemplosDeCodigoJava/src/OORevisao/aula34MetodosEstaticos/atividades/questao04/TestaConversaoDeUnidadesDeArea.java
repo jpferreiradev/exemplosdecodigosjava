@@ -1,4 +1,4 @@
-package OORevisao.aula34MetodosEstaticos.atividades.questao04;
+package OORevisao.aula34MetodosEstaticos.Atividades.questao04;
 
 public class TestaConversaoDeUnidadesDeArea {
     public static void main(String[] args) {
