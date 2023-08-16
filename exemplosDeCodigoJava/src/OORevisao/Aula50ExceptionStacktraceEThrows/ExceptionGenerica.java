@@ -7,12 +7,13 @@ public class ExceptionGenerica {
         int[] denominadores = {2, 0, 4, 8, 0};
 
         for (int i = 0; i < numeros.length; i++) {
-            System.out.println(numeros[i] + "/" + denominadores[i] + "=" + (numeros[i] / denominadores[i]));
-            try {
 
+            try {
+                System.out.println(numeros[i] + "/" + denominadores[i] + "=" + (numeros[i] / denominadores[i]));
             } catch (Exception e) {
-                System.out.println(e.getMessage());
-                e.printStackTrace();
+                // Os dois métodos mais usados são os getMessage e o printStacktrace
+                System.out.println(e.getMessage()); //
+                e.printStackTrace(); //Descobrir aonde aconteceu o erro;
 
 
             }
