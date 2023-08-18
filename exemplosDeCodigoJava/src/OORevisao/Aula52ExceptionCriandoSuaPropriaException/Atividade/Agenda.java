@@ -7,7 +7,7 @@ public class Agenda {
     private Contato[] contatos; // Arry de contatos
 
     public Agenda() {
-        contatos = new Contato[5]; // Construtor para agenda, com 5 contatos
+        contatos = new Contato[5]; // Construtor para agenda, com 5 contatos, você definiu quantos contatos vai querer
     }
 
     public void adicionarContato(Contato c) throws AgendaCheiaException { // Modo como adicionar um contato;
