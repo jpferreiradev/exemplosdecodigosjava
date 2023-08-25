@@ -9,10 +9,11 @@ public class TestaEnu {
         // Array dias;
         DiaSemana[] dias = DiaSemana.values(); // O método values obtem todos os valores de um determinado enumerador;
 
+
         for(int i = 0; i < dias.length; i++){ // Exemplo for normal;
             System.out.println(dias[i]);
         }
-        System.out.println(" -----------------");
+        System.out.println("-----------------");
 
         for( DiaSemana dia : DiaSemana.values()){ // Exemplo for melhorado;
             System.out.println(dia);
@@ -22,3 +23,5 @@ public class TestaEnu {
 
     }
 }
+
+
