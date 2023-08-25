@@ -2,6 +2,8 @@ package OORevisao.Aula56EnumeradoresMetodosAbstratos;
 
 import java.util.InputMismatchException;
 
+//https://github.com/loiane/curso-java-basico/blob/master/eclipse/curso-java-basico/src/com/loiane/cursojava/aula56/GeraCpfCnpj.java
+
 public class GeraCpfCnpj {
 
     private static boolean comPontos = true;
